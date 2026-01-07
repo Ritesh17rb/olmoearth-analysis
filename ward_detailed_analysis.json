@@ -1,0 +1,2272 @@
+{
+  "analysis_date": "2026-01-07",
+  "total_wards_analyzed": 97,
+  "wards_with_change_analysis": 2,
+  "methodology": {
+    "vegetation_index": "Derived from 75th percentile of positive embedding values",
+    "urban_density": "Mean absolute embedding magnitude",
+    "change_intensity": "Standard deviation of embeddings",
+    "feature_diversity": "Range of embedding values (land use variety)"
+  },
+  "wards": [
+    {
+      "ward_id": 4910,
+      "ward_name": "Shettihalli",
+      "ward_no": "17",
+      "ward_code": "2003017",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33761510252952576,
+        "urban_density": 0.24831365048885345,
+        "change_intensity": 0.3826240003108978,
+        "feature_diversity": 11.502870559692383,
+        "spatial_heterogeneity": 117.37158203125,
+        "coverage_percent": 7.5933075933075935,
+        "pixel_count": 45312,
+        "mean_embedding": 0.003258937271311879,
+        "std_embedding": 0.3826240003108978
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4915,
+      "ward_name": "Mallasandra",
+      "ward_no": "20",
+      "ward_code": "2003020",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.334627628326416,
+        "urban_density": 0.24396775662899017,
+        "change_intensity": 0.37736621499061584,
+        "feature_diversity": 11.292438507080078,
+        "spatial_heterogeneity": 228.39154052734375,
+        "coverage_percent": 25.71428571428571,
+        "pixel_count": 41472,
+        "mean_embedding": 0.001651277532801032,
+        "std_embedding": 0.37736621499061584
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4994,
+      "ward_name": "Mattikere",
+      "ward_no": "59",
+      "ward_code": "2003059",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3544343411922455,
+        "urban_density": 0.257636159658432,
+        "change_intensity": 0.40577736496925354,
+        "feature_diversity": 13.82064151763916,
+        "spatial_heterogeneity": 228.04151916503906,
+        "coverage_percent": 49.31818181818181,
+        "pixel_count": 499968,
+        "mean_embedding": 0.0017784012015908957,
+        "std_embedding": 0.40577736496925354
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4995,
+      "ward_name": "Aramane Nagara",
+      "ward_no": "60",
+      "ward_code": "2003060",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3522144854068756,
+        "urban_density": 0.2579067349433899,
+        "change_intensity": 0.4074307382106781,
+        "feature_diversity": 14.43686580657959,
+        "spatial_heterogeneity": 172.12582397460938,
+        "coverage_percent": 31.913541004450096,
+        "pixel_count": 385536,
+        "mean_embedding": 0.0023660517763346434,
+        "std_embedding": 0.4074307382106781
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4998,
+      "ward_name": "Malleswaram",
+      "ward_no": "61",
+      "ward_code": "2003061",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3509620726108551,
+        "urban_density": 0.2557919919490814,
+        "change_intensity": 0.403096079826355,
+        "feature_diversity": 13.747455596923828,
+        "spatial_heterogeneity": 192.52279663085938,
+        "coverage_percent": 48.43597262952102,
+        "pixel_count": 761088,
+        "mean_embedding": 0.0020927577279508114,
+        "std_embedding": 0.403096079826355
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4950,
+      "ward_name": "Chanakya",
+      "ward_no": "37",
+      "ward_code": "2003037",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.342171311378479,
+        "urban_density": 0.24867670238018036,
+        "change_intensity": 0.3845718204975128,
+        "feature_diversity": 12.8990478515625,
+        "spatial_heterogeneity": 206.31475830078125,
+        "coverage_percent": 45.04504504504504,
+        "pixel_count": 307200,
+        "mean_embedding": 0.0018630053382366896,
+        "std_embedding": 0.3845718204975128
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4958,
+      "ward_name": "Peenya",
+      "ward_no": "41",
+      "ward_code": "2003041",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3422727882862091,
+        "urban_density": 0.2497110366821289,
+        "change_intensity": 0.3893626630306244,
+        "feature_diversity": 14.018674850463867,
+        "spatial_heterogeneity": 154.53421020507812,
+        "coverage_percent": 52.233115468409586,
+        "pixel_count": 1473024,
+        "mean_embedding": 0.002518588677048683,
+        "std_embedding": 0.3893626630306244
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4922,
+      "ward_name": "Nelagadderanahalli",
+      "ward_no": "23",
+      "ward_code": "2003023",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3419452905654907,
+        "urban_density": 0.2491781860589981,
+        "change_intensity": 0.38494881987571716,
+        "feature_diversity": 14.328498840332031,
+        "spatial_heterogeneity": 157.87411499023438,
+        "coverage_percent": 55.88662790697675,
+        "pixel_count": 2362368,
+        "mean_embedding": 0.002437327755615115,
+        "std_embedding": 0.38494881987571716
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4982,
+      "ward_name": "Nandini Layout",
+      "ward_no": "53",
+      "ward_code": "2003053",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3343956470489502,
+        "urban_density": 0.24555279314517975,
+        "change_intensity": 0.37429994344711304,
+        "feature_diversity": 11.573235511779785,
+        "spatial_heterogeneity": 156.68643188476562,
+        "coverage_percent": 61.88257222739981,
+        "pixel_count": 509952,
+        "mean_embedding": 0.0023878472857177258,
+        "std_embedding": 0.37429994344711304
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4975,
+      "ward_name": "Marappana Palya",
+      "ward_no": "50",
+      "ward_code": "2003050",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34578996896743774,
+        "urban_density": 0.2516685724258423,
+        "change_intensity": 0.39024674892425537,
+        "feature_diversity": 13.406082153320312,
+        "spatial_heterogeneity": 173.321044921875,
+        "coverage_percent": 66.14906832298136,
+        "pixel_count": 981504,
+        "mean_embedding": 0.002250583143904805,
+        "std_embedding": 0.39024674892425537
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4999,
+      "ward_name": "Subramanya Nagar",
+      "ward_no": "62",
+      "ward_code": "2003062",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34855538606643677,
+        "urban_density": 0.25369465351104736,
+        "change_intensity": 0.3974592983722687,
+        "feature_diversity": 13.839255332946777,
+        "spatial_heterogeneity": 214.82508850097656,
+        "coverage_percent": 63.565891472868216,
+        "pixel_count": 503808,
+        "mean_embedding": 0.0018491530790925026,
+        "std_embedding": 0.3974592983722687
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5003,
+      "ward_name": "Kadu Malleshwara",
+      "ward_no": "64",
+      "ward_code": "2003064",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34354013204574585,
+        "urban_density": 0.2472381740808487,
+        "change_intensity": 0.37600788474082947,
+        "feature_diversity": 13.23327922821045,
+        "spatial_heterogeneity": 167.0814666748047,
+        "coverage_percent": 56.493506493506494,
+        "pixel_count": 200448,
+        "mean_embedding": 0.002249446464702487,
+        "std_embedding": 0.37600788474082947
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5143,
+      "ward_name": "Subhash Nagar",
+      "ward_no": "134",
+      "ward_code": "2003134",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34037959575653076,
+        "urban_density": 0.25016629695892334,
+        "change_intensity": 0.38058364391326904,
+        "feature_diversity": 9.995748519897461,
+        "spatial_heterogeneity": 129.1801300048828,
+        "coverage_percent": 14.743589743589745,
+        "pixel_count": 17664,
+        "mean_embedding": 0.0029451469890773296,
+        "std_embedding": 0.38058364391326904
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5002,
+      "ward_name": "Gayithri Nagar",
+      "ward_no": "63",
+      "ward_code": "2003063",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3467440605163574,
+        "urban_density": 0.25327855348587036,
+        "change_intensity": 0.397616446018219,
+        "feature_diversity": 13.962343215942383,
+        "spatial_heterogeneity": 219.53372192382812,
+        "coverage_percent": 49.754901960784316,
+        "pixel_count": 311808,
+        "mean_embedding": 0.0018101861933246255,
+        "std_embedding": 0.397616446018219
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4927,
+      "ward_name": "Hegganahalli",
+      "ward_no": "26",
+      "ward_code": "2003026",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34006473422050476,
+        "urban_density": 0.24828918278217316,
+        "change_intensity": 0.38573095202445984,
+        "feature_diversity": 13.214818954467773,
+        "spatial_heterogeneity": 188.6288604736328,
+        "coverage_percent": 50.28571428571429,
+        "pixel_count": 811008,
+        "mean_embedding": 0.0020439201034605503,
+        "std_embedding": 0.38573095202445984
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4930,
+      "ward_name": "Sunkadakatte",
+      "ward_no": "27",
+      "ward_code": "2003027",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33289241790771484,
+        "urban_density": 0.24478130042552948,
+        "change_intensity": 0.37541496753692627,
+        "feature_diversity": 11.780353546142578,
+        "spatial_heterogeneity": 178.4820098876953,
+        "coverage_percent": 47.111817700052995,
+        "pixel_count": 682752,
+        "mean_embedding": 0.002102377125993371,
+        "std_embedding": 0.37541496753692627
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4966,
+      "ward_name": "Vijayanagara Krishnadevaraya",
+      "ward_no": "45",
+      "ward_code": "2003045",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3330431580543518,
+        "urban_density": 0.24480262398719788,
+        "change_intensity": 0.37767550349235535,
+        "feature_diversity": 12.796770095825195,
+        "spatial_heterogeneity": 145.97901916503906,
+        "coverage_percent": 42.1217827997489,
+        "pixel_count": 1545984,
+        "mean_embedding": 0.0025861903559416533,
+        "std_embedding": 0.37767550349235535
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4987,
+      "ward_name": "Shankar Matt",
+      "ward_no": "56",
+      "ward_code": "2003056",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33971309661865234,
+        "urban_density": 0.24797923862934113,
+        "change_intensity": 0.38220810890197754,
+        "feature_diversity": 12.691930770874023,
+        "spatial_heterogeneity": 200.9652862548828,
+        "coverage_percent": 59.42982456140351,
+        "pixel_count": 416256,
+        "mean_embedding": 0.0019008612725883722,
+        "std_embedding": 0.38220810890197754
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4990,
+      "ward_name": "Shakthi Ganapathi Nagar",
+      "ward_no": "57",
+      "ward_code": "2003057",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3417750597000122,
+        "urban_density": 0.24970625340938568,
+        "change_intensity": 0.38469618558883667,
+        "feature_diversity": 12.733051300048828,
+        "spatial_heterogeneity": 217.9482879638672,
+        "coverage_percent": 60.66176470588235,
+        "pixel_count": 380160,
+        "mean_embedding": 0.0017640801379457116,
+        "std_embedding": 0.38469618558883667
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4991,
+      "ward_name": "Vrisabhavathi Nagar",
+      "ward_no": "58",
+      "ward_code": "2003058",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3391546308994293,
+        "urban_density": 0.24804240465164185,
+        "change_intensity": 0.3848210573196411,
+        "feature_diversity": 13.118990898132324,
+        "spatial_heterogeneity": 201.6039581298828,
+        "coverage_percent": 64.35185185185185,
+        "pixel_count": 427008,
+        "mean_embedding": 0.0019077970646321774,
+        "std_embedding": 0.3848210573196411
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5166,
+      "ward_name": "Kamakshipalya",
+      "ward_no": "145",
+      "ward_code": "2003145",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34533774852752686,
+        "urban_density": 0.25174644589424133,
+        "change_intensity": 0.3889402151107788,
+        "feature_diversity": 13.754945755004883,
+        "spatial_heterogeneity": 187.0013885498047,
+        "coverage_percent": 65.3409090909091,
+        "pixel_count": 529920,
+        "mean_embedding": 0.0020788786932826042,
+        "std_embedding": 0.3889402151107788
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5163,
+      "ward_name": "Basaveshwara Nagar",
+      "ward_no": "144",
+      "ward_code": "2003144",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.350206583738327,
+        "urban_density": 0.25446000695228577,
+        "change_intensity": 0.3948880136013031,
+        "feature_diversity": 13.292792320251465,
+        "spatial_heterogeneity": 209.47775268554688,
+        "coverage_percent": 68.75725900116144,
+        "pixel_count": 454656,
+        "mean_embedding": 0.0018841071287170053,
+        "std_embedding": 0.3948880136013031
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5162,
+      "ward_name": "Shivanagara",
+      "ward_no": "143",
+      "ward_code": "2003143",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34819889068603516,
+        "urban_density": 0.2535743713378906,
+        "change_intensity": 0.39503446221351624,
+        "feature_diversity": 13.085262298583984,
+        "spatial_heterogeneity": 219.43618774414062,
+        "coverage_percent": 76.4792899408284,
+        "pixel_count": 397056,
+        "mean_embedding": 0.001799224759452045,
+        "std_embedding": 0.39503446221351624
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5158,
+      "ward_name": "Rajaji Nagar",
+      "ward_no": "141",
+      "ward_code": "2003141",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34184497594833374,
+        "urban_density": 0.24966450035572052,
+        "change_intensity": 0.3821873664855957,
+        "feature_diversity": 12.75838565826416,
+        "spatial_heterogeneity": 183.37168884277344,
+        "coverage_percent": 57.07364341085272,
+        "pixel_count": 452352,
+        "mean_embedding": 0.002083222381770611,
+        "std_embedding": 0.3821873664855957
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5159,
+      "ward_name": "Sriramamandir",
+      "ward_no": "142",
+      "ward_code": "2003142",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3477664589881897,
+        "urban_density": 0.2536733150482178,
+        "change_intensity": 0.3957134783267975,
+        "feature_diversity": 13.304195404052734,
+        "spatial_heterogeneity": 199.91571044921875,
+        "coverage_percent": 52.714285714285715,
+        "pixel_count": 566784,
+        "mean_embedding": 0.0019784015603363514,
+        "std_embedding": 0.3957134783267975
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5155,
+      "ward_name": "Prakash Nagar",
+      "ward_no": "140",
+      "ward_code": "2003140",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3517569303512573,
+        "urban_density": 0.2557663917541504,
+        "change_intensity": 0.4013254940509796,
+        "feature_diversity": 13.519882202148438,
+        "spatial_heterogeneity": 219.93258666992188,
+        "coverage_percent": 38.22222222222222,
+        "pixel_count": 330240,
+        "mean_embedding": 0.0018237659242004156,
+        "std_embedding": 0.4013254940509796
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5154,
+      "ward_name": "Dayananda Nagar",
+      "ward_no": "139",
+      "ward_code": "2003139",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35887622833251953,
+        "urban_density": 0.26068800687789917,
+        "change_intensity": 0.41465190052986145,
+        "feature_diversity": 13.465808868408203,
+        "spatial_heterogeneity": 283.7948913574219,
+        "coverage_percent": 82.35294117647058,
+        "pixel_count": 150528,
+        "mean_embedding": 0.0014600971480831504,
+        "std_embedding": 0.41465190052986145
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5146,
+      "ward_name": "Okalipuram",
+      "ward_no": "135",
+      "ward_code": "2003135",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34531500935554504,
+        "urban_density": 0.2524276375770569,
+        "change_intensity": 0.3898742198944092,
+        "feature_diversity": 13.083788871765137,
+        "spatial_heterogeneity": 172.16839599609375,
+        "coverage_percent": 68.91891891891892,
+        "pixel_count": 313344,
+        "mean_embedding": 0.0022634936030954123,
+        "std_embedding": 0.3898742198944092
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5150,
+      "ward_name": "Cottonpete",
+      "ward_no": "137",
+      "ward_code": "2003137",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.36362868547439575,
+        "urban_density": 0.2675110995769501,
+        "change_intensity": 0.4329025149345398,
+        "feature_diversity": 13.712413787841797,
+        "spatial_heterogeneity": 275.9470520019531,
+        "coverage_percent": 66.66666666666666,
+        "pixel_count": 165888,
+        "mean_embedding": 0.0015677883056923747,
+        "std_embedding": 0.4329025149345398
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5147,
+      "ward_name": "Binnipete",
+      "ward_no": "136",
+      "ward_code": "2003136",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35289207100868225,
+        "urban_density": 0.2586915194988251,
+        "change_intensity": 0.4059029221534729,
+        "feature_diversity": 14.388978958129883,
+        "spatial_heterogeneity": 237.2326202392578,
+        "coverage_percent": 49.784668389319556,
+        "pixel_count": 443904,
+        "mean_embedding": 0.0017099911347031593,
+        "std_embedding": 0.4059029221534729
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4978,
+      "ward_name": "Nagapura",
+      "ward_no": "51",
+      "ward_code": "2003051",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33928999304771423,
+        "urban_density": 0.24668662250041962,
+        "change_intensity": 0.37677302956581116,
+        "feature_diversity": 13.542460441589355,
+        "spatial_heterogeneity": 166.84449768066406,
+        "coverage_percent": 63.775231860338245,
+        "pixel_count": 897792,
+        "mean_embedding": 0.002257228596135974,
+        "std_embedding": 0.37677302956581116
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4983,
+      "ward_name": "Jai Maruthinagara",
+      "ward_no": "54",
+      "ward_code": "2003054",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3413156270980835,
+        "urban_density": 0.24771595001220703,
+        "change_intensity": 0.3783110976219177,
+        "feature_diversity": 12.253732681274414,
+        "spatial_heterogeneity": 210.57354736328125,
+        "coverage_percent": 47.204301075268816,
+        "pixel_count": 337152,
+        "mean_embedding": 0.0017955746734514832,
+        "std_embedding": 0.3783110976219177
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4986,
+      "ward_name": "Puneet Rajkumar",
+      "ward_no": "55",
+      "ward_code": "2003055",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34101027250289917,
+        "urban_density": 0.24740521609783173,
+        "change_intensity": 0.37737706303596497,
+        "feature_diversity": 12.203542709350586,
+        "spatial_heterogeneity": 200.2990264892578,
+        "coverage_percent": 51.89473684210526,
+        "pixel_count": 378624,
+        "mean_embedding": 0.0018830683548003435,
+        "std_embedding": 0.37737706303596497
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4955,
+      "ward_name": "Veeramadakari",
+      "ward_no": "40",
+      "ward_code": "2003040",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3369288146495819,
+        "urban_density": 0.24718795716762543,
+        "change_intensity": 0.382179856300354,
+        "feature_diversity": 13.188756942749023,
+        "spatial_heterogeneity": 135.65359497070312,
+        "coverage_percent": 52.169076751946605,
+        "pixel_count": 2161152,
+        "mean_embedding": 0.0028163220267742872,
+        "std_embedding": 0.382179856300354
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4959,
+      "ward_name": "Lakshmi Devi Nagar",
+      "ward_no": "42",
+      "ward_code": "2003042",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33773094415664673,
+        "urban_density": 0.2457399070262909,
+        "change_intensity": 0.3796811103820801,
+        "feature_diversity": 12.16641616821289,
+        "spatial_heterogeneity": 164.94540405273438,
+        "coverage_percent": 52.94642857142857,
+        "pixel_count": 455424,
+        "mean_embedding": 0.00230085919611156,
+        "std_embedding": 0.3796811103820801
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4938,
+      "ward_name": "Doddagollarahatti",
+      "ward_no": "31",
+      "ward_code": "2003031",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34045928716659546,
+        "urban_density": 0.248655766248703,
+        "change_intensity": 0.3869790732860565,
+        "feature_diversity": 14.233901977539062,
+        "spatial_heterogeneity": 150.4227752685547,
+        "coverage_percent": 43.75074466817586,
+        "pixel_count": 2820096,
+        "mean_embedding": 0.0025716095697134733,
+        "std_embedding": 0.3869790732860565
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4939,
+      "ward_name": "Ullal",
+      "ward_no": "32",
+      "ward_code": "2003032",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35808709263801575,
+        "urban_density": 0.2602245509624481,
+        "change_intensity": 0.41476112604141235,
+        "feature_diversity": 13.399662017822266,
+        "spatial_heterogeneity": 193.38169860839844,
+        "coverage_percent": 21.187683284457478,
+        "pixel_count": 221952,
+        "mean_embedding": 0.0021437795367091894,
+        "std_embedding": 0.41476112604141235
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4918,
+      "ward_name": "T Dasarahalli",
+      "ward_no": "21",
+      "ward_code": "2003021",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3348064720630646,
+        "urban_density": 0.24550679326057434,
+        "change_intensity": 0.37349265813827515,
+        "feature_diversity": 11.291783332824707,
+        "spatial_heterogeneity": 188.49765014648438,
+        "coverage_percent": 56.826241134751776,
+        "pixel_count": 492288,
+        "mean_embedding": 0.0019804181065410376,
+        "std_embedding": 0.37349265813827515
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4919,
+      "ward_name": "Chokkasandra",
+      "ward_no": "22",
+      "ward_code": "2003022",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34355390071868896,
+        "urban_density": 0.25008606910705566,
+        "change_intensity": 0.3881995975971222,
+        "feature_diversity": 13.270427703857422,
+        "spatial_heterogeneity": 167.59481811523438,
+        "coverage_percent": 46.73913043478261,
+        "pixel_count": 1023744,
+        "mean_embedding": 0.0023152984213083982,
+        "std_embedding": 0.3881995975971222
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4923,
+      "ward_name": "Rajagopal Nagar",
+      "ward_no": "24",
+      "ward_code": "2003024",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33926090598106384,
+        "urban_density": 0.24770872294902802,
+        "change_intensity": 0.38195788860321045,
+        "feature_diversity": 13.284706115722656,
+        "spatial_heterogeneity": 169.8456268310547,
+        "coverage_percent": 42.94117647058823,
+        "pixel_count": 1009152,
+        "mean_embedding": 0.0022478532046079636,
+        "std_embedding": 0.38195788860321045
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4926,
+      "ward_name": "Rajeshwari Nagar",
+      "ward_no": "25",
+      "ward_code": "2003025",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3482670783996582,
+        "urban_density": 0.25258561968803406,
+        "change_intensity": 0.3962540030479431,
+        "feature_diversity": 13.43719482421875,
+        "spatial_heterogeneity": 199.56004333496094,
+        "coverage_percent": 65.546875,
+        "pixel_count": 644352,
+        "mean_embedding": 0.0019846379291266203,
+        "std_embedding": 0.3962540030479431
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4962,
+      "ward_name": "Ranadheera Kanteerava",
+      "ward_no": "43",
+      "ward_code": "2003043",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34515297412872314,
+        "urban_density": 0.2515656352043152,
+        "change_intensity": 0.3925490081310272,
+        "feature_diversity": 13.681306838989258,
+        "spatial_heterogeneity": 206.49066162109375,
+        "coverage_percent": 55.48048048048047,
+        "pixel_count": 567552,
+        "mean_embedding": 0.0019000496249645948,
+        "std_embedding": 0.3925490081310272
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4963,
+      "ward_name": "Veera Sindhura Lakshamana",
+      "ward_no": "44",
+      "ward_code": "2003044",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33987540006637573,
+        "urban_density": 0.2482847422361374,
+        "change_intensity": 0.38527873158454895,
+        "feature_diversity": 13.810724258422852,
+        "spatial_heterogeneity": 174.4517364501953,
+        "coverage_percent": 36.112122315253,
+        "pixel_count": 761856,
+        "mean_embedding": 0.002207511803135276,
+        "std_embedding": 0.38527873158454895
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4967,
+      "ward_name": "Sir M. Vishweshwaraiah",
+      "ward_no": "46",
+      "ward_code": "2003046",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3393106460571289,
+        "urban_density": 0.2478444129228592,
+        "change_intensity": 0.3825109899044037,
+        "feature_diversity": 13.496223449707031,
+        "spatial_heterogeneity": 165.3350830078125,
+        "coverage_percent": 68.63922241280733,
+        "pixel_count": 1843968,
+        "mean_embedding": 0.002312550088390708,
+        "std_embedding": 0.3825109899044037
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4970,
+      "ward_name": "Nalvadi Krishnaraja Wadior Park",
+      "ward_no": "47",
+      "ward_code": "2003047",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3340158462524414,
+        "urban_density": 0.24486932158470154,
+        "change_intensity": 0.37435320019721985,
+        "feature_diversity": 12.131532669067383,
+        "spatial_heterogeneity": 167.6788330078125,
+        "coverage_percent": 58.43454790823211,
+        "pixel_count": 997632,
+        "mean_embedding": 0.002231560880318284,
+        "std_embedding": 0.37435320019721985
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4947,
+      "ward_name": "Chatrapati Shivaji",
+      "ward_no": "36",
+      "ward_code": "2003036",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33740705251693726,
+        "urban_density": 0.24668781459331512,
+        "change_intensity": 0.3771173655986786,
+        "feature_diversity": 12.602767944335938,
+        "spatial_heterogeneity": 145.5404510498047,
+        "coverage_percent": 37.83052884615385,
+        "pixel_count": 966912,
+        "mean_embedding": 0.0025901515036821365,
+        "std_embedding": 0.3771173655986786
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4971,
+      "ward_name": "Jnana Bharathi",
+      "ward_no": "48",
+      "ward_code": "2003048",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3411817252635956,
+        "urban_density": 0.24870654940605164,
+        "change_intensity": 0.38108381628990173,
+        "feature_diversity": 12.721613883972168,
+        "spatial_heterogeneity": 169.7374725341797,
+        "coverage_percent": 27.564102564102566,
+        "pixel_count": 1122816,
+        "mean_embedding": 0.002244136529043317,
+        "std_embedding": 0.38108381628990173
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4979,
+      "ward_name": "Mahalakshimpuram",
+      "ward_no": "52",
+      "ward_code": "2003052",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3564123511314392,
+        "urban_density": 0.25848376750946045,
+        "change_intensity": 0.40735167264938354,
+        "feature_diversity": 13.556283950805664,
+        "spatial_heterogeneity": 216.10057067871094,
+        "coverage_percent": 48.59747545582048,
+        "pixel_count": 532224,
+        "mean_embedding": 0.001884009689092636,
+        "std_embedding": 0.40735167264938354
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5210,
+      "ward_name": "Jagajivanaram Nagar",
+      "ward_no": "167",
+      "ward_code": "2003167",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3397616744041443,
+        "urban_density": 0.24870486557483673,
+        "change_intensity": 0.38236433267593384,
+        "feature_diversity": 13.632408142089844,
+        "spatial_heterogeneity": 166.6870880126953,
+        "coverage_percent": 50.73684210526316,
+        "pixel_count": 370176,
+        "mean_embedding": 0.0022929050028324127,
+        "std_embedding": 0.38236433267593384
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5214,
+      "ward_name": "Devaraj Urs Nagar",
+      "ward_no": "169",
+      "ward_code": "2003169",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33203524351119995,
+        "urban_density": 0.24449633061885834,
+        "change_intensity": 0.37160632014274597,
+        "feature_diversity": 11.240950584411621,
+        "spatial_heterogeneity": 194.82791137695312,
+        "coverage_percent": 53.92,
+        "pixel_count": 258816,
+        "mean_embedding": 0.0019063566578552127,
+        "std_embedding": 0.37160632014274597
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5198,
+      "ward_name": "Attiguppe",
+      "ward_no": "161",
+      "ward_code": "2003161",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33744269609451294,
+        "urban_density": 0.24735501408576965,
+        "change_intensity": 0.37524428963661194,
+        "feature_diversity": 13.212688446044922,
+        "spatial_heterogeneity": 183.8524932861328,
+        "coverage_percent": 57.37931034482758,
+        "pixel_count": 638976,
+        "mean_embedding": 0.002040007384493947,
+        "std_embedding": 0.37524428963661194
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5195,
+      "ward_name": "Bapuji Nagar",
+      "ward_no": "160",
+      "ward_code": "2003160",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33455321192741394,
+        "urban_density": 0.2457994818687439,
+        "change_intensity": 0.3725803792476654,
+        "feature_diversity": 10.938878059387207,
+        "spatial_heterogeneity": 238.03221130371094,
+        "coverage_percent": 54.833333333333336,
+        "pixel_count": 252672,
+        "mean_embedding": 0.001564251957461238,
+        "std_embedding": 0.3725803792476654
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4954,
+      "ward_name": "Kanneshwara Rama",
+      "ward_no": "39",
+      "ward_code": "2003039",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3455057740211487,
+        "urban_density": 0.2524697482585907,
+        "change_intensity": 0.3944833278656006,
+        "feature_diversity": 14.01524543762207,
+        "spatial_heterogeneity": 169.96763610839844,
+        "coverage_percent": 20.77922077922078,
+        "pixel_count": 540672,
+        "mean_embedding": 0.002319931983947754,
+        "std_embedding": 0.3944833278656006
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5211,
+      "ward_name": "Padarayanapura",
+      "ward_no": "168",
+      "ward_code": "2003168",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33418238162994385,
+        "urban_density": 0.24593515694141388,
+        "change_intensity": 0.3755786418914795,
+        "feature_diversity": 11.396614074707031,
+        "spatial_heterogeneity": 174.2867431640625,
+        "coverage_percent": 55.50595238095239,
+        "pixel_count": 286464,
+        "mean_embedding": 0.0021539467852562666,
+        "std_embedding": 0.3755786418914795
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4951,
+      "ward_name": "J P Park",
+      "ward_no": "38",
+      "ward_code": "2003038",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35670745372772217,
+        "urban_density": 0.2595207095146179,
+        "change_intensity": 0.41006654500961304,
+        "feature_diversity": 13.725916862487793,
+        "spatial_heterogeneity": 206.37216186523438,
+        "coverage_percent": 45.13888888888889,
+        "pixel_count": 698880,
+        "mean_embedding": 0.001986024435609579,
+        "std_embedding": 0.41006654500961304
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5207,
+      "ward_name": "Chalavadipalya",
+      "ward_no": "166",
+      "ward_code": "2003166",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33604520559310913,
+        "urban_density": 0.2467239499092102,
+        "change_intensity": 0.3699725866317749,
+        "feature_diversity": 10.586215019226074,
+        "spatial_heterogeneity": 160.54786682128906,
+        "coverage_percent": 29.347826086956523,
+        "pixel_count": 41472,
+        "mean_embedding": 0.0023034377954900265,
+        "std_embedding": 0.3699725866317749
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5190,
+      "ward_name": "Vijayanagar",
+      "ward_no": "157",
+      "ward_code": "2003157",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35220175981521606,
+        "urban_density": 0.25628042221069336,
+        "change_intensity": 0.4013211727142334,
+        "feature_diversity": 13.442089080810547,
+        "spatial_heterogeneity": 221.16053771972656,
+        "coverage_percent": 45.51495016611295,
+        "pixel_count": 315648,
+        "mean_embedding": 0.0018136147409677505,
+        "std_embedding": 0.4013211727142334
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5187,
+      "ward_name": "Kempapura Agrahara",
+      "ward_no": "156",
+      "ward_code": "2003156",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3526794910430908,
+        "urban_density": 0.25865140557289124,
+        "change_intensity": 0.408871054649353,
+        "feature_diversity": 13.641422271728516,
+        "spatial_heterogeneity": 263.86578369140625,
+        "coverage_percent": 66.05263157894737,
+        "pixel_count": 192768,
+        "mean_embedding": 0.001548541709780693,
+        "std_embedding": 0.408871054649353
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4899,
+      "ward_name": "Kodigehalli",
+      "ward_no": "12",
+      "ward_code": "2003012",
+      "years_available": [
+        "2019",
+        "2024"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34312546253204346,
+        "urban_density": 0.24728228151798248,
+        "change_intensity": 0.3811851739883423,
+        "feature_diversity": 10.102056503295898,
+        "spatial_heterogeneity": 125.75178527832031,
+        "coverage_percent": 53.57142857142857,
+        "pixel_count": 11520,
+        "mean_embedding": 0.003030250547453761,
+        "std_embedding": 0.3811851739883423
+      },
+      "metrics_2024": {
+        "vegetation_index": 0.33441784977912903,
+        "urban_density": 0.2445625215768814,
+        "change_intensity": 0.37348026037216187,
+        "feature_diversity": 12.003507614135742,
+        "spatial_heterogeneity": 163.63450622558594,
+        "coverage_percent": 52.18867924528302,
+        "pixel_count": 1062144,
+        "mean_embedding": 0.0022814052645117044,
+        "std_embedding": 0.37348026037216187
+      },
+      "change_metrics": {
+        "vegetation_change": -0.008707612752914429,
+        "vegetation_change_percent": -2.5377343577646183,
+        "urban_density_change": -0.0027197599411010742,
+        "urban_density_change_percent": -1.099860420409172,
+        "diversity_change": 1.9014511108398438,
+        "diversity_change_percent": 18.822416111209396,
+        "overall_change_magnitude": 0.0007488452829420567
+      },
+      "has_change_analysis": true
+    },
+    {
+      "ward_id": 5222,
+      "ward_name": "Sunkenahalli",
+      "ward_no": "173",
+      "ward_code": "2003173",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3410813808441162,
+        "urban_density": 0.24715808033943176,
+        "change_intensity": 0.3672592341899872,
+        "feature_diversity": 10.031911849975586,
+        "spatial_heterogeneity": 227.83724975585938,
+        "coverage_percent": 44.44444444444444,
+        "pixel_count": 15360,
+        "mean_embedding": 0.0016109367134049535,
+        "std_embedding": 0.3672592341899872
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5215,
+      "ward_name": "Azad Nagar",
+      "ward_no": "170",
+      "ward_code": "2003170",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3322063684463501,
+        "urban_density": 0.2443774938583374,
+        "change_intensity": 0.37061482667922974,
+        "feature_diversity": 11.07819938659668,
+        "spatial_heterogeneity": 201.55059814453125,
+        "coverage_percent": 63.33333333333333,
+        "pixel_count": 160512,
+        "mean_embedding": 0.0018378178356215358,
+        "std_embedding": 0.37061482667922974
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5206,
+      "ward_name": "Chamrajapet",
+      "ward_no": "165",
+      "ward_code": "2003165",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33504581451416016,
+        "urban_density": 0.24527162313461304,
+        "change_intensity": 0.36985841393470764,
+        "feature_diversity": 10.874164581298828,
+        "spatial_heterogeneity": 174.9064483642578,
+        "coverage_percent": 30.01930501930502,
+        "pixel_count": 238848,
+        "mean_embedding": 0.0021136070135980844,
+        "std_embedding": 0.36985841393470764
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4935,
+      "ward_name": "Herohalli",
+      "ward_no": "30",
+      "ward_code": "2003030",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3410246670246124,
+        "urban_density": 0.24913105368614197,
+        "change_intensity": 0.3862208127975464,
+        "feature_diversity": 13.419071197509766,
+        "spatial_heterogeneity": 166.15817260742188,
+        "coverage_percent": 50.33643892339544,
+        "pixel_count": 1493760,
+        "mean_embedding": 0.0023234165273606777,
+        "std_embedding": 0.3862208127975464
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4931,
+      "ward_name": "Dodda Bidarakallu",
+      "ward_no": "28",
+      "ward_code": "2003028",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34256333112716675,
+        "urban_density": 0.25016042590141296,
+        "change_intensity": 0.3912234306335449,
+        "feature_diversity": 13.57855224609375,
+        "spatial_heterogeneity": 156.19439697265625,
+        "coverage_percent": 54.761904761904766,
+        "pixel_count": 3815424,
+        "mean_embedding": 0.0025037212762981653,
+        "std_embedding": 0.3912234306335449
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5194,
+      "ward_name": "Hampi Nagar",
+      "ward_no": "159",
+      "ward_code": "2003159",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33819133043289185,
+        "urban_density": 0.24727195501327515,
+        "change_intensity": 0.376374214887619,
+        "feature_diversity": 13.381769180297852,
+        "spatial_heterogeneity": 179.46327209472656,
+        "coverage_percent": 39.85587583148559,
+        "pixel_count": 552192,
+        "mean_embedding": 0.0020962213166058064,
+        "std_embedding": 0.376374214887619
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5191,
+      "ward_name": "Hosahalli",
+      "ward_no": "158",
+      "ward_code": "2003158",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35420435667037964,
+        "urban_density": 0.25697407126426697,
+        "change_intensity": 0.3985889256000519,
+        "feature_diversity": 13.111982345581055,
+        "spatial_heterogeneity": 215.9073944091797,
+        "coverage_percent": 49.58371877890842,
+        "pixel_count": 411648,
+        "mean_embedding": 0.0018451105570420623,
+        "std_embedding": 0.3985889256000519
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5203,
+      "ward_name": "Avalahalli",
+      "ward_no": "164",
+      "ward_code": "2003164",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33187776803970337,
+        "urban_density": 0.24655239284038544,
+        "change_intensity": 0.371212899684906,
+        "feature_diversity": 10.80543327331543,
+        "spatial_heterogeneity": 217.26528930664062,
+        "coverage_percent": 62.0,
+        "pixel_count": 71424,
+        "mean_embedding": 0.001707569696009159,
+        "std_embedding": 0.371212899684906
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5199,
+      "ward_name": "Gali Anjenaya Temple ward",
+      "ward_no": "162",
+      "ward_code": "2003162",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33693772554397583,
+        "urban_density": 0.24460965394973755,
+        "change_intensity": 0.3720690608024597,
+        "feature_diversity": 10.845154762268066,
+        "spatial_heterogeneity": 278.92559814453125,
+        "coverage_percent": 15.918367346938775,
+        "pixel_count": 29952,
+        "mean_embedding": 0.0013329365756362677,
+        "std_embedding": 0.3720690608024597
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5007,
+      "ward_name": "Radhakrishna Temple Ward",
+      "ward_no": "66",
+      "ward_code": "2003066",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34596532583236694,
+        "urban_density": 0.24890799820423126,
+        "change_intensity": 0.37380653619766235,
+        "feature_diversity": 10.632078170776367,
+        "spatial_heterogeneity": 175.15928649902344,
+        "coverage_percent": 18.79310344827586,
+        "pixel_count": 83712,
+        "mean_embedding": 0.0021330949384719133,
+        "std_embedding": 0.37380653619766235
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4902,
+      "ward_name": "Dodda Bommasandra",
+      "ward_no": "13",
+      "ward_code": "2003013",
+      "years_available": [
+        "2019",
+        "2024"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33700740337371826,
+        "urban_density": 0.24655963480472565,
+        "change_intensity": 0.3800570070743561,
+        "feature_diversity": 12.530414581298828,
+        "spatial_heterogeneity": 122.34825897216797,
+        "coverage_percent": 33.33333333333333,
+        "pixel_count": 270336,
+        "mean_embedding": 0.003105354029685259,
+        "std_embedding": 0.3800570070743561
+      },
+      "metrics_2024": {
+        "vegetation_index": 0.33349278569221497,
+        "urban_density": 0.24432481825351715,
+        "change_intensity": 0.3788720667362213,
+        "feature_diversity": 12.64517593383789,
+        "spatial_heterogeneity": 130.0395965576172,
+        "coverage_percent": 53.905496624879454,
+        "pixel_count": 429312,
+        "mean_embedding": 0.0029125132132321596,
+        "std_embedding": 0.3788720667362213
+      },
+      "change_metrics": {
+        "vegetation_change": -0.003514617681503296,
+        "vegetation_change_percent": -1.0428903479030769,
+        "urban_density_change": -0.002234816551208496,
+        "urban_density_change_percent": -0.9064000086544834,
+        "diversity_change": 0.1147613525390625,
+        "diversity_change_percent": 0.9158623746602885,
+        "overall_change_magnitude": 0.00019284081645309925
+      },
+      "has_change_analysis": true
+    },
+    {
+      "ward_id": 4911,
+      "ward_name": "Bagalakunte",
+      "ward_no": "18",
+      "ward_code": "2003018",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3447537422180176,
+        "urban_density": 0.2522960603237152,
+        "change_intensity": 0.38344037532806396,
+        "feature_diversity": 11.627886772155762,
+        "spatial_heterogeneity": 189.39956665039062,
+        "coverage_percent": 14.444444444444443,
+        "pixel_count": 19968,
+        "mean_embedding": 0.0020235050469636917,
+        "std_embedding": 0.38344037532806396
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5167,
+      "ward_name": "Dr. Raj Kumar Ward",
+      "ward_no": "146",
+      "ward_code": "2003146",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3393709063529968,
+        "urban_density": 0.24784700572490692,
+        "change_intensity": 0.37940192222595215,
+        "feature_diversity": 13.086400985717773,
+        "spatial_heterogeneity": 168.7764892578125,
+        "coverage_percent": 50.7446221731936,
+        "pixel_count": 706560,
+        "mean_embedding": 0.0022469547111541033,
+        "std_embedding": 0.37940192222595215
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5170,
+      "ward_name": "Agrahara Dasarahalli",
+      "ward_no": "147",
+      "ward_code": "2003147",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.34088295698165894,
+        "urban_density": 0.24871589243412018,
+        "change_intensity": 0.38155597448349,
+        "feature_diversity": 13.14801025390625,
+        "spatial_heterogeneity": 179.03756713867188,
+        "coverage_percent": 68.05555555555556,
+        "pixel_count": 376320,
+        "mean_embedding": 0.002130150329321623,
+        "std_embedding": 0.38155597448349
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5174,
+      "ward_name": "Kaveripura",
+      "ward_no": "149",
+      "ward_code": "2003149",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33697861433029175,
+        "urban_density": 0.24684488773345947,
+        "change_intensity": 0.38120266795158386,
+        "feature_diversity": 12.547738075256348,
+        "spatial_heterogeneity": 167.6165313720703,
+        "coverage_percent": 66.15384615384615,
+        "pixel_count": 594432,
+        "mean_embedding": 0.0022732545621693134,
+        "std_embedding": 0.38120266795158386
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5171,
+      "ward_name": "Govindaraja Nagar",
+      "ward_no": "148",
+      "ward_code": "2003148",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3384590744972229,
+        "urban_density": 0.24738585948944092,
+        "change_intensity": 0.38015398383140564,
+        "feature_diversity": 12.555323600769043,
+        "spatial_heterogeneity": 183.01876831054688,
+        "coverage_percent": 56.05769230769231,
+        "pixel_count": 447744,
+        "mean_embedding": 0.002076131058856845,
+        "std_embedding": 0.38015398383140564
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5175,
+      "ward_name": "Marenahalli",
+      "ward_no": "150",
+      "ward_code": "2003150",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35497379302978516,
+        "urban_density": 0.2578078806400299,
+        "change_intensity": 0.4070693552494049,
+        "feature_diversity": 13.63074016571045,
+        "spatial_heterogeneity": 240.720458984375,
+        "coverage_percent": 48.95833333333333,
+        "pixel_count": 469248,
+        "mean_embedding": 0.0016900459304451942,
+        "std_embedding": 0.4070693552494049
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5178,
+      "ward_name": "Maruthi Mandir ward",
+      "ward_no": "151",
+      "ward_code": "2003151",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3530372977256775,
+        "urban_density": 0.25617659091949463,
+        "change_intensity": 0.4029121398925781,
+        "feature_diversity": 13.723833084106445,
+        "spatial_heterogeneity": 236.38150024414062,
+        "coverage_percent": 50.83996463306808,
+        "pixel_count": 441600,
+        "mean_embedding": 0.001703499467112124,
+        "std_embedding": 0.4029121398925781
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5179,
+      "ward_name": "Mudalapalya",
+      "ward_no": "152",
+      "ward_code": "2003152",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3444023132324219,
+        "urban_density": 0.2517051100730896,
+        "change_intensity": 0.39749884605407715,
+        "feature_diversity": 13.254341125488281,
+        "spatial_heterogeneity": 213.84555053710938,
+        "coverage_percent": 53.70370370370371,
+        "pixel_count": 356352,
+        "mean_embedding": 0.001857812749221921,
+        "std_embedding": 0.39749884605407715
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5182,
+      "ward_name": "Nagarabhavi",
+      "ward_no": "153",
+      "ward_code": "2003153",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.35186895728111267,
+        "urban_density": 0.25665849447250366,
+        "change_intensity": 0.4016484320163727,
+        "feature_diversity": 13.698263168334961,
+        "spatial_heterogeneity": 233.64453125,
+        "coverage_percent": 50.55555555555556,
+        "pixel_count": 559104,
+        "mean_embedding": 0.0017180576687678695,
+        "std_embedding": 0.4016484320163727
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5183,
+      "ward_name": "Chandra Layout",
+      "ward_no": "154",
+      "ward_code": "2003154",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33217230439186096,
+        "urban_density": 0.245040625333786,
+        "change_intensity": 0.36846765875816345,
+        "feature_diversity": 11.350712776184082,
+        "spatial_heterogeneity": 217.0400848388672,
+        "coverage_percent": 29.574468085106382,
+        "pixel_count": 106752,
+        "mean_embedding": 0.001696694060228765,
+        "std_embedding": 0.36846765875816345
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4914,
+      "ward_name": "Defence Colony",
+      "ward_no": "19",
+      "ward_code": "2003019",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.33599230647087097,
+        "urban_density": 0.24550016224384308,
+        "change_intensity": 0.3748064339160919,
+        "feature_diversity": 11.62714958190918,
+        "spatial_heterogeneity": 140.74588012695312,
+        "coverage_percent": 52.41830065359478,
+        "pixel_count": 307968,
+        "mean_embedding": 0.0026620011776685715,
+        "std_embedding": 0.3748064339160919
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4934,
+      "ward_name": "Vidyamanyanagar",
+      "ward_no": "29",
+      "ward_code": "2003029",
+      "years_available": [
+        "2019"
+      ],
+      "metrics_2019": {
+        "vegetation_index": 0.3352799415588379,
+        "urban_density": 0.24551403522491455,
+        "change_intensity": 0.3801659941673279,
+        "feature_diversity": 13.504931449890137,
+        "spatial_heterogeneity": 157.4217529296875,
+        "coverage_percent": 47.4025974025974,
+        "pixel_count": 2410752,
+        "mean_embedding": 0.002413952024653554,
+        "std_embedding": 0.3801659941673279
+      },
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 6934,
+      "ward_name": "Anjanapura",
+      "ward_no": "224",
+      "ward_code": "2003224",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33070433139801025,
+        "urban_density": 0.24421900510787964,
+        "change_intensity": 0.3789479434490204,
+        "feature_diversity": 12.716776847839355,
+        "spatial_heterogeneity": 121.74270629882812,
+        "coverage_percent": 65.19290340749085,
+        "pixel_count": 1777920,
+        "mean_embedding": 0.003111695172265172,
+        "std_embedding": 0.3789479434490204
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4946,
+      "ward_name": "Hemmigepura",
+      "ward_no": "35",
+      "ward_code": "2003035",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.32997143268585205,
+        "urban_density": 0.2447921335697174,
+        "change_intensity": 0.3831316828727722,
+        "feature_diversity": 14.082140922546387,
+        "spatial_heterogeneity": 119.12996673583984,
+        "coverage_percent": 26.27008547008547,
+        "pixel_count": 2950656,
+        "mean_embedding": 0.00321508152410388,
+        "std_embedding": 0.3831316828727722
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4878,
+      "ward_name": "Kempegowda Ward",
+      "ward_no": "1",
+      "ward_code": "2003001",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.333520770072937,
+        "urban_density": 0.2459827959537506,
+        "change_intensity": 0.38271912932395935,
+        "feature_diversity": 14.028900146484375,
+        "spatial_heterogeneity": 132.2772216796875,
+        "coverage_percent": 43.52449223416966,
+        "pixel_count": 5595648,
+        "mean_embedding": 0.0028923109639436007,
+        "std_embedding": 0.38271912932395935
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4879,
+      "ward_name": "Chowdeswari Ward",
+      "ward_no": "2",
+      "ward_code": "2003002",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33250030875205994,
+        "urban_density": 0.24471715092658997,
+        "change_intensity": 0.38005340099334717,
+        "feature_diversity": 13.33205795288086,
+        "spatial_heterogeneity": 122.32929992675781,
+        "coverage_percent": 42.22100054975261,
+        "pixel_count": 2949120,
+        "mean_embedding": 0.003105805953964591,
+        "std_embedding": 0.38005340099334717
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4882,
+      "ward_name": "Someshwara Ward",
+      "ward_no": "3",
+      "ward_code": "2003003",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.3349980413913727,
+        "urban_density": 0.24524350464344025,
+        "change_intensity": 0.375739187002182,
+        "feature_diversity": 12.072610855102539,
+        "spatial_heterogeneity": 137.2908477783203,
+        "coverage_percent": 46.77280550774527,
+        "pixel_count": 1669632,
+        "mean_embedding": 0.0027358115185052156,
+        "std_embedding": 0.375739187002182
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4883,
+      "ward_name": "Atturu Layout",
+      "ward_no": "4",
+      "ward_code": "2003004",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33283179998397827,
+        "urban_density": 0.24274760484695435,
+        "change_intensity": 0.3749210238456726,
+        "feature_diversity": 11.850239753723145,
+        "spatial_heterogeneity": 169.9992218017578,
+        "coverage_percent": 22.424242424242426,
+        "pixel_count": 170496,
+        "mean_embedding": 0.0022044279612600803,
+        "std_embedding": 0.3749210238456726
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4886,
+      "ward_name": "Yelahanka Satellite Town",
+      "ward_no": "5",
+      "ward_code": "2003005",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33353811502456665,
+        "urban_density": 0.24465259909629822,
+        "change_intensity": 0.3761208951473236,
+        "feature_diversity": 13.054350852966309,
+        "spatial_heterogeneity": 135.0639190673828,
+        "coverage_percent": 62.40391334730957,
+        "pixel_count": 2057472,
+        "mean_embedding": 0.0027837620582431555,
+        "std_embedding": 0.3761208951473236
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4891,
+      "ward_name": "Jakkuru",
+      "ward_no": "8",
+      "ward_code": "2003008",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.3332335352897644,
+        "urban_density": 0.2448893040418625,
+        "change_intensity": 0.3778552711009979,
+        "feature_diversity": 13.505558967590332,
+        "spatial_heterogeneity": 139.09120178222656,
+        "coverage_percent": 56.36889991728702,
+        "pixel_count": 5233920,
+        "mean_embedding": 0.002715600887313485,
+        "std_embedding": 0.3778552711009979
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4890,
+      "ward_name": "Thanisandra",
+      "ward_no": "7",
+      "ward_code": "2003007",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.3300750255584717,
+        "urban_density": 0.24304939806461334,
+        "change_intensity": 0.3741306662559509,
+        "feature_diversity": 12.261588096618652,
+        "spatial_heterogeneity": 144.0363311767578,
+        "coverage_percent": 59.02777777777778,
+        "pixel_count": 1827840,
+        "mean_embedding": 0.002596474252641201,
+        "std_embedding": 0.3741306662559509
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4895,
+      "ward_name": "Kempapura",
+      "ward_no": "10",
+      "ward_code": "2003010",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33349740505218506,
+        "urban_density": 0.24500621855258942,
+        "change_intensity": 0.3751486539840698,
+        "feature_diversity": 13.181371688842773,
+        "spatial_heterogeneity": 146.2699432373047,
+        "coverage_percent": 51.25922709509335,
+        "pixel_count": 1813248,
+        "mean_embedding": 0.002563769230619073,
+        "std_embedding": 0.3751486539840698
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4894,
+      "ward_name": "Amrutahalli",
+      "ward_no": "9",
+      "ward_code": "2003009",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33190256357192993,
+        "urban_density": 0.2434922754764557,
+        "change_intensity": 0.3749200105667114,
+        "feature_diversity": 11.881272315979004,
+        "spatial_heterogeneity": 149.3650665283203,
+        "coverage_percent": 51.291079812206576,
+        "pixel_count": 2013696,
+        "mean_embedding": 0.0025090917479246855,
+        "std_embedding": 0.3749200105667114
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4887,
+      "ward_name": "Kogilu",
+      "ward_no": "6",
+      "ward_code": "2003006",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33200788497924805,
+        "urban_density": 0.24446314573287964,
+        "change_intensity": 0.37870481610298157,
+        "feature_diversity": 13.238941192626953,
+        "spatial_heterogeneity": 126.50423431396484,
+        "coverage_percent": 58.39703112883572,
+        "pixel_count": 8097024,
+        "mean_embedding": 0.0029926137067377567,
+        "std_embedding": 0.37870481610298157
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4898,
+      "ward_name": "Byatarayanapura",
+      "ward_no": "11",
+      "ward_code": "2003011",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33162176609039307,
+        "urban_density": 0.2449864149093628,
+        "change_intensity": 0.37856724858283997,
+        "feature_diversity": 12.384233474731445,
+        "spatial_heterogeneity": 127.99858093261719,
+        "coverage_percent": 48.42484248424842,
+        "pixel_count": 4131840,
+        "mean_embedding": 0.002956589451059699,
+        "std_embedding": 0.37856724858283997
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 4903,
+      "ward_name": "Vidyaranyapura",
+      "ward_no": "14",
+      "ward_code": "2003014",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": null,
+      "change_metrics": null,
+      "has_change_analysis": false
+    },
+    {
+      "ward_id": 5038,
+      "ward_name": "Horamavu",
+      "ward_no": "81",
+      "ward_code": "2003081",
+      "years_available": [
+        "2024"
+      ],
+      "metrics_2019": null,
+      "metrics_2024": {
+        "vegetation_index": 0.33139052987098694,
+        "urban_density": 0.24342317879199982,
+        "change_intensity": 0.37546658515930176,
+        "feature_diversity": 12.262626647949219,
+        "spatial_heterogeneity": 130.79925537109375,
+        "coverage_percent": 59.52525867315885,
+        "pixel_count": 3004416,
+        "mean_embedding": 0.0028695559594780207,
+        "std_embedding": 0.37546658515930176
+      },
+      "change_metrics": null,
+      "has_change_analysis": false
+    }
+  ]
+}

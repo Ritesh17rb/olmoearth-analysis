@@ -1,0 +1,881 @@
+{
+  "total_wards_with_data": 97,
+  "total_embeddings": 4,
+  "wards": [
+    {
+      "name": "Shettihalli",
+      "no": "17",
+      "id": 4910,
+      "code": "2003017",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Mallasandra",
+      "no": "20",
+      "id": 4915,
+      "code": "2003020",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Mattikere",
+      "no": "59",
+      "id": 4994,
+      "code": "2003059",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Aramane Nagara",
+      "no": "60",
+      "id": 4995,
+      "code": "2003060",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Malleswaram",
+      "no": "61",
+      "id": 4998,
+      "code": "2003061",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Chanakya",
+      "no": "37",
+      "id": 4950,
+      "code": "2003037",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Peenya",
+      "no": "41",
+      "id": 4958,
+      "code": "2003041",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Nelagadderanahalli",
+      "no": "23",
+      "id": 4922,
+      "code": "2003023",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Nandini Layout",
+      "no": "53",
+      "id": 4982,
+      "code": "2003053",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Marappana Palya",
+      "no": "50",
+      "id": 4975,
+      "code": "2003050",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Subramanya Nagar",
+      "no": "62",
+      "id": 4999,
+      "code": "2003062",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Kadu Malleshwara",
+      "no": "64",
+      "id": 5003,
+      "code": "2003064",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Subhash Nagar",
+      "no": "134",
+      "id": 5143,
+      "code": "2003134",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Gayithri Nagar",
+      "no": "63",
+      "id": 5002,
+      "code": "2003063",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Hegganahalli",
+      "no": "26",
+      "id": 4927,
+      "code": "2003026",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Sunkadakatte",
+      "no": "27",
+      "id": 4930,
+      "code": "2003027",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Vijayanagara Krishnadevaraya",
+      "no": "45",
+      "id": 4966,
+      "code": "2003045",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Shankar Matt",
+      "no": "56",
+      "id": 4987,
+      "code": "2003056",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Shakthi Ganapathi Nagar",
+      "no": "57",
+      "id": 4990,
+      "code": "2003057",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Vrisabhavathi Nagar",
+      "no": "58",
+      "id": 4991,
+      "code": "2003058",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Kamakshipalya",
+      "no": "145",
+      "id": 5166,
+      "code": "2003145",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Basaveshwara Nagar",
+      "no": "144",
+      "id": 5163,
+      "code": "2003144",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Shivanagara",
+      "no": "143",
+      "id": 5162,
+      "code": "2003143",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Rajaji Nagar",
+      "no": "141",
+      "id": 5158,
+      "code": "2003141",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Sriramamandir",
+      "no": "142",
+      "id": 5159,
+      "code": "2003142",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Prakash Nagar",
+      "no": "140",
+      "id": 5155,
+      "code": "2003140",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Dayananda Nagar",
+      "no": "139",
+      "id": 5154,
+      "code": "2003139",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Okalipuram",
+      "no": "135",
+      "id": 5146,
+      "code": "2003135",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Cottonpete",
+      "no": "137",
+      "id": 5150,
+      "code": "2003137",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Binnipete",
+      "no": "136",
+      "id": 5147,
+      "code": "2003136",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Nagapura",
+      "no": "51",
+      "id": 4978,
+      "code": "2003051",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Jai Maruthinagara",
+      "no": "54",
+      "id": 4983,
+      "code": "2003054",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Puneet Rajkumar",
+      "no": "55",
+      "id": 4986,
+      "code": "2003055",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Veeramadakari",
+      "no": "40",
+      "id": 4955,
+      "code": "2003040",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Lakshmi Devi Nagar",
+      "no": "42",
+      "id": 4959,
+      "code": "2003042",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Doddagollarahatti",
+      "no": "31",
+      "id": 4938,
+      "code": "2003031",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Ullal",
+      "no": "32",
+      "id": 4939,
+      "code": "2003032",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "T Dasarahalli",
+      "no": "21",
+      "id": 4918,
+      "code": "2003021",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Chokkasandra",
+      "no": "22",
+      "id": 4919,
+      "code": "2003022",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Rajagopal Nagar",
+      "no": "24",
+      "id": 4923,
+      "code": "2003024",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Rajeshwari Nagar",
+      "no": "25",
+      "id": 4926,
+      "code": "2003025",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Ranadheera Kanteerava",
+      "no": "43",
+      "id": 4962,
+      "code": "2003043",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Veera Sindhura Lakshamana",
+      "no": "44",
+      "id": 4963,
+      "code": "2003044",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Sir M. Vishweshwaraiah",
+      "no": "46",
+      "id": 4967,
+      "code": "2003046",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Nalvadi Krishnaraja Wadior Park",
+      "no": "47",
+      "id": 4970,
+      "code": "2003047",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Chatrapati Shivaji",
+      "no": "36",
+      "id": 4947,
+      "code": "2003036",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Jnana Bharathi",
+      "no": "48",
+      "id": 4971,
+      "code": "2003048",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Mahalakshimpuram",
+      "no": "52",
+      "id": 4979,
+      "code": "2003052",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Jagajivanaram Nagar",
+      "no": "167",
+      "id": 5210,
+      "code": "2003167",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Devaraj Urs Nagar",
+      "no": "169",
+      "id": 5214,
+      "code": "2003169",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Attiguppe",
+      "no": "161",
+      "id": 5198,
+      "code": "2003161",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Bapuji Nagar",
+      "no": "160",
+      "id": 5195,
+      "code": "2003160",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Kanneshwara Rama",
+      "no": "39",
+      "id": 4954,
+      "code": "2003039",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Padarayanapura",
+      "no": "168",
+      "id": 5211,
+      "code": "2003168",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "J P Park",
+      "no": "38",
+      "id": 4951,
+      "code": "2003038",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Chalavadipalya",
+      "no": "166",
+      "id": 5207,
+      "code": "2003166",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Vijayanagar",
+      "no": "157",
+      "id": 5190,
+      "code": "2003157",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Kempapura Agrahara",
+      "no": "156",
+      "id": 5187,
+      "code": "2003156",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Kodigehalli",
+      "no": "12",
+      "id": 4899,
+      "code": "2003012",
+      "years": [
+        "2019",
+        "2024"
+      ]
+    },
+    {
+      "name": "Sunkenahalli",
+      "no": "173",
+      "id": 5222,
+      "code": "2003173",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Azad Nagar",
+      "no": "170",
+      "id": 5215,
+      "code": "2003170",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Chamrajapet",
+      "no": "165",
+      "id": 5206,
+      "code": "2003165",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Herohalli",
+      "no": "30",
+      "id": 4935,
+      "code": "2003030",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Dodda Bidarakallu",
+      "no": "28",
+      "id": 4931,
+      "code": "2003028",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Hampi Nagar",
+      "no": "159",
+      "id": 5194,
+      "code": "2003159",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Hosahalli",
+      "no": "158",
+      "id": 5191,
+      "code": "2003158",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Avalahalli",
+      "no": "164",
+      "id": 5203,
+      "code": "2003164",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Gali Anjenaya Temple ward",
+      "no": "162",
+      "id": 5199,
+      "code": "2003162",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Radhakrishna Temple Ward",
+      "no": "66",
+      "id": 5007,
+      "code": "2003066",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Dodda Bommasandra",
+      "no": "13",
+      "id": 4902,
+      "code": "2003013",
+      "years": [
+        "2019",
+        "2024"
+      ]
+    },
+    {
+      "name": "Bagalakunte",
+      "no": "18",
+      "id": 4911,
+      "code": "2003018",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Dr. Raj Kumar Ward",
+      "no": "146",
+      "id": 5167,
+      "code": "2003146",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Agrahara Dasarahalli",
+      "no": "147",
+      "id": 5170,
+      "code": "2003147",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Kaveripura",
+      "no": "149",
+      "id": 5174,
+      "code": "2003149",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Govindaraja Nagar",
+      "no": "148",
+      "id": 5171,
+      "code": "2003148",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Marenahalli",
+      "no": "150",
+      "id": 5175,
+      "code": "2003150",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Maruthi Mandir ward",
+      "no": "151",
+      "id": 5178,
+      "code": "2003151",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Mudalapalya",
+      "no": "152",
+      "id": 5179,
+      "code": "2003152",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Nagarabhavi",
+      "no": "153",
+      "id": 5182,
+      "code": "2003153",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Chandra Layout",
+      "no": "154",
+      "id": 5183,
+      "code": "2003154",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Defence Colony",
+      "no": "19",
+      "id": 4914,
+      "code": "2003019",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Vidyamanyanagar",
+      "no": "29",
+      "id": 4934,
+      "code": "2003029",
+      "years": [
+        "2019"
+      ]
+    },
+    {
+      "name": "Anjanapura",
+      "no": "224",
+      "id": 6934,
+      "code": "2003224",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Hemmigepura",
+      "no": "35",
+      "id": 4946,
+      "code": "2003035",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Kempegowda Ward",
+      "no": "1",
+      "id": 4878,
+      "code": "2003001",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Chowdeswari Ward",
+      "no": "2",
+      "id": 4879,
+      "code": "2003002",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Someshwara Ward",
+      "no": "3",
+      "id": 4882,
+      "code": "2003003",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Atturu Layout",
+      "no": "4",
+      "id": 4883,
+      "code": "2003004",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Yelahanka Satellite Town",
+      "no": "5",
+      "id": 4886,
+      "code": "2003005",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Jakkuru",
+      "no": "8",
+      "id": 4891,
+      "code": "2003008",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Thanisandra",
+      "no": "7",
+      "id": 4890,
+      "code": "2003007",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Kempapura",
+      "no": "10",
+      "id": 4895,
+      "code": "2003010",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Amrutahalli",
+      "no": "9",
+      "id": 4894,
+      "code": "2003009",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Kogilu",
+      "no": "6",
+      "id": 4887,
+      "code": "2003006",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Byatarayanapura",
+      "no": "11",
+      "id": 4898,
+      "code": "2003011",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Vidyaranyapura",
+      "no": "14",
+      "id": 4903,
+      "code": "2003014",
+      "years": [
+        "2024"
+      ]
+    },
+    {
+      "name": "Horamavu",
+      "no": "81",
+      "id": 5038,
+      "code": "2003081",
+      "years": [
+        "2024"
+      ]
+    }
+  ]
+}
