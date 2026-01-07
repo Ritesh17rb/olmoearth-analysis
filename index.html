@@ -50,8 +50,8 @@
             margin-bottom: 8px;
             background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
@@ -111,19 +111,7 @@
             font-weight: 700;
             background: linear-gradient(135deg, #60a5fa 0%, #818cf8 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             background-clip: text;
-        }
-
-        .stat-value.positive {
-            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stat-value.negative {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -145,6 +133,41 @@
             display: block;
             text-transform: uppercase;
             letter-spacing: 0.8px;
+        }
+
+        /* Enhanced Sidebar Navigation for Metrics */
+        .metric-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .metric-item {
+            padding: 12px 16px;
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 14px;
+            font-weight: 500;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .metric-item:hover {
+            background: rgba(30, 41, 59, 0.8);
+            transform: translateX(4px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .metric-item.active {
+            background: linear-gradient(90deg, rgba(99, 102, 241, 0.2) 0%, rgba(30, 41, 59, 0.4) 100%);
+            border-color: #6366f1;
+            color: #818cf8;
+            font-weight: 600;
         }
 
         .toggle-group {
@@ -210,6 +233,7 @@
         #map {
             flex: 1;
             position: relative;
+            background: #0f1419;
         }
 
         .legend {
@@ -320,31 +344,7 @@
             font-weight: 600;
         }
 
-        .leaflet-popup-content-wrapper {
-            background: rgba(15, 20, 25, 0.95);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(148, 163, 184, 0.2);
-            border-radius: 12px;
-            color: #e2e8f0;
-        }
-
-        .leaflet-popup-tip {
-            background: rgba(15, 20, 25, 0.95);
-        }
-
-        .popup-title {
-            font-weight: 700;
-            font-size: 14px;
-            color: #f1f5f9;
-            margin-bottom: 8px;
-        }
-
-        .popup-detail {
-            font-size: 12px;
-            color: #94a3b8;
-            margin: 4px 0;
-        }
-
+        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -368,23 +368,6 @@
             color: #94a3b8;
             z-index: 2000;
         }
-
-        .analysis-select {
-            width: 100%;
-            padding: 12px;
-            background: rgba(30, 41, 59, 0.6);
-            border: 1px solid rgba(148, 163, 184, 0.2);
-            border-radius: 10px;
-            color: #e2e8f0;
-            font-size: 14px;
-            font-family: 'Inter', sans-serif;
-            cursor: pointer;
-        }
-
-        .analysis-select:focus {
-            outline: none;
-            border-color: #6366f1;
-        }
     </style>
 </head>
 
@@ -399,44 +382,58 @@
             <div id="stats">
                 <div class="stat-grid">
                     <div class="stat-card">
-                        <div class="stat-label">Wards Processed</div>
-                        <div class="stat-value" id="wards-processed">97</div>
+                        <div class="stat-label">Wards Analyzed</div>
+                        <div class="stat-value" id="wards-processed">0</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Total Wards</div>
-                        <div class="stat-value">243</div>
+                        <div class="stat-value">198</div>
                     </div>
                 </div>
             </div>
 
             <div id="controls">
                 <div class="control-section">
-                    <span class="control-label">Visualization Metric</span>
-                    <select class="analysis-select" id="metric-selector">
-                        <option value="status">Data Availability Status</option>
-                        <option value="vegetation">Vegetation Index</option>
-                        <option value="urban_density">Urban Density</option>
-                        <option value="diversity">Feature Diversity</option>
-                        <option value="veg_change">Vegetation Change (%)</option>
-                        <option value="urban_change">Urban Density Change (%)</option>
-                        <option value="diversity_change">Diversity Change (%)</option>
-                    </select>
+                    <span class="control-label">Analysis Metrics</span>
+                    <div class="metric-list" id="metric-list">
+                        <div class="metric-item active" onclick="selectMetric('status')">
+                            <span>Data Availability Status</span>
+                        </div>
+                        <div class="metric-item" onclick="selectMetric('vegetation')">
+                            <span>Vegetation Index</span>
+                        </div>
+                        <div class="metric-item" onclick="selectMetric('urban_density')">
+                            <span>Urban Density</span>
+                        </div>
+                        <div class="metric-item" onclick="selectMetric('diversity')">
+                            <span>Feature Diversity</span>
+                        </div>
+                        <div class="metric-item" onclick="selectMetric('veg_change')">
+                            <span>Vegetation Change</span>
+                        </div>
+                        <div class="metric-item" onclick="selectMetric('urban_change')">
+                            <span>Urban Density Change</span>
+                        </div>
+                        <div class="metric-item" onclick="selectMetric('diversity_change')">
+                            <span>Diversity Change</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="control-section">
-                    <span class="control-label">Layer Controls</span>
+                    <span class="control-label">Layers</span>
                     <div class="toggle-group">
                         <div class="toggle-item">
-                            <input type="checkbox" id="show-satellite" checked>
+                            <input type="checkbox" id="show-osm" onchange="toggleLayer('osm')">
+                            <label for="show-osm">OpenStreetMap Overlay</label>
+                        </div>
+                        <div class="toggle-item">
+                            <input type="checkbox" id="show-satellite" onchange="toggleLayer('satellite')">
                             <label for="show-satellite">Satellite Imagery</label>
                         </div>
                         <div class="toggle-item">
-                            <input type="checkbox" id="show-wards" checked>
-                            <label for="show-wards">Ward Boundaries</label>
-                        </div>
-                        <div class="toggle-item">
-                            <input type="checkbox" id="show-processed" checked>
-                            <label for="show-processed">Highlight Processed</label>
+                            <input type="checkbox" id="show-wards" checked onchange="toggleLayer('wards')">
+                            <label for="show-wards">Ward Boundaries & Labels</label>
                         </div>
                     </div>
                 </div>
@@ -445,27 +442,25 @@
                     <span class="control-label">Time Selection</span>
                     <div class="toggle-group">
                         <div class="toggle-item">
-                            <input type="radio" name="time" id="time-2019" value="2019">
+                            <input type="radio" name="time" id="time-2019" value="2019" onchange="updateTime('2019')">
                             <label for="time-2019">2019 Baseline</label>
-                            <span class="status-badge status-complete">82</span>
                         </div>
                         <div class="toggle-item">
-                            <input type="radio" name="time" id="time-2024" value="2024" checked>
+                            <input type="radio" name="time" id="time-2024" value="2024" checked
+                                onchange="updateTime('2024')">
                             <label for="time-2024">2024 Current</label>
-                            <span class="status-badge status-complete">17</span>
                         </div>
                         <div class="toggle-item">
-                            <input type="radio" name="time" id="time-both" value="both">
-                            <label for="time-both">Both (Change Analysis)</label>
-                            <span class="status-badge status-both">2</span>
+                            <input type="radio" name="time" id="time-both" value="both" onchange="updateTime('both')">
+                            <label for="time-both">Change Analysis (Both)</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="control-section">
-                    <span class="control-label">Opacity</span>
+                    <span class="control-label">Layer Opacity</span>
                     <input type="range" id="opacity-slider" min="0" max="100" value="70"
-                        style="width: 100%; accent-color: #6366f1;">
+                        style="width: 100%; accent-color: #6366f1;" oninput="updateOpacity(this.value)">
                 </div>
             </div>
         </div>
@@ -473,31 +468,9 @@
             <div class="loading" id="loading">Loading ward data...</div>
         </div>
 
-
         <div class="legend">
             <div class="legend-title" id="legend-title">Data Availability</div>
-            <div id="legend-content">
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);">
-                    </div>
-                    <span>Both Years (2)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);">
-                    </div>
-                    <span>2024 Only (17)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);">
-                    </div>
-                    <span>2019 Only (82)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: rgba(100, 116, 139, 0.3); border: 2px solid #64748b;">
-                    </div>
-                    <span>No Data (146)</span>
-                </div>
-            </div>
+            <div id="legend-content"></div>
         </div>
 
         <div class="ward-info-panel" id="ward-info-panel">
@@ -510,39 +483,66 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         let wardMapping = null;
-        let analysisData = null;
         let detailedAnalysis = null;
         let currentYear = '2024';
-        let showProcessedOnly = true;
         let currentMetric = 'status';
+        let metricRanges = {};
 
         // Initialize map
         const map = L.map('map', {
-            zoomControl: true
-        }).setView([12.9716, 77.5946], 12);
+            zoomControl: true,
+            zoomAnimation: true,
+            fadeAnimation: true
+        }).setView([12.9716, 77.5946], 12); // Bangalore Center
 
-        const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri',
-            maxZoom: 19
-        }).addTo(map);
+        // Create Panes for proper layering
+        // 1. Tile Pane (default z-index 200) - Dark Matter
+        // 2. Satellite Pane (z-index 250) - So it covers Dark Matter when enabled
+        // 3. Overlay Pane (z-index 400) - For OSM Overlay
+        // 4. Wards Pane (z-index 450) - Ensure Wards are always on top
 
+        map.createPane('satellitePane');
+        map.getPane('satellitePane').style.zIndex = 250;
+
+        map.createPane('osmPane');
+        map.getPane('osmPane').style.zIndex = 300;
+        // set opacity for OSM to overlay smoothly
+        map.getPane('osmPane').style.opacity = 0.6;
+
+        map.createPane('wardsPane');
+        map.getPane('wardsPane').style.zIndex = 450;
+
+        // Base Layer (Dark)
         const darkLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; OpenStreetMap &copy; CARTO',
-            subdomains: 'abcd',
             maxZoom: 20
+        }).addTo(map);
+
+        // Satellite Layer (Initially OFF)
+        const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri',
+            maxZoom: 19,
+            pane: 'satellitePane'
+        });
+
+        // OSM Overlay Layer (Initially OFF)
+        const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            pane: 'osmPane',
+            attribution: '&copy; OpenStreetMap'
         });
 
         let wardLayer = null;
 
-        // Load ward mapping and detailed analysis data
+        // Load data
         Promise.all([
             fetch('ward_mapping.json').then(r => r.json()),
-            fetch('embedding_analysis.json').then(r => r.json()),
             fetch('ward_detailed_analysis.json').then(r => r.json())
-        ]).then(([mapping, analysis, detailed]) => {
+        ]).then(([mapping, detailed]) => {
             wardMapping = mapping;
-            analysisData = analysis;
             detailedAnalysis = detailed;
+
+            calculateMetricRanges();
             loadWards();
             updateStats();
         }).catch(error => {
@@ -550,27 +550,54 @@
             document.getElementById('loading').textContent = 'Error loading data. Run analysis scripts first.';
         });
 
-        function getWardData(wardId) {
-            if (!wardMapping) return null;
-            return wardMapping.wards.find(w => w.id === wardId);
+        function calculateMetricRanges() {
+            if (!detailedAnalysis || !detailedAnalysis.wards) return;
+
+            const metrics = ['vegetation_index', 'urban_density', 'feature_diversity'];
+            const changes = ['vegetation_change_percent', 'urban_density_change_percent', 'diversity_change_percent'];
+
+            // Initialize ranges
+            [...metrics, ...changes].forEach(m => {
+                metricRanges[m] = { min: Infinity, max: -Infinity };
+            });
+
+            detailedAnalysis.wards.forEach(w => {
+                if (w.metrics_2019) updateRange(w.metrics_2019, metrics);
+                if (w.metrics_2024) updateRange(w.metrics_2024, metrics);
+
+                if (w.change_metrics) {
+                    changes.forEach(key => {
+                        const val = w.change_metrics[key];
+                        if (val !== undefined && val !== null) {
+                            metricRanges[key].min = Math.min(metricRanges[key].min, val);
+                            metricRanges[key].max = Math.max(metricRanges[key].max, val);
+                        }
+                    });
+                }
+            });
         }
 
-        function getDetailedWardData(wardId) {
-            if (!detailedAnalysis) return null;
-            return detailedAnalysis.wards.find(w => w.ward_id === wardId);
+        function updateRange(sourceObj, keys) {
+            keys.forEach(key => {
+                const val = sourceObj[key];
+                if (val !== undefined && val !== null) {
+                    metricRanges[key].min = Math.min(metricRanges[key].min, val);
+                    metricRanges[key].max = Math.max(metricRanges[key].max, val);
+                }
+            });
         }
 
         function getMetricValue(wardId) {
-            const detailedWard = getDetailedWardData(wardId);
+            const detailedWard = detailedAnalysis?.wards.find(w => w.ward_id === wardId);
             if (!detailedWard) return null;
 
             switch (currentMetric) {
                 case 'vegetation':
-                    return detailedWard.metrics_2024?.vegetation_index || detailedWard.metrics_2019?.vegetation_index;
+                    return detailedWard.metrics_2024?.vegetation_index ?? detailedWard.metrics_2019?.vegetation_index;
                 case 'urban_density':
-                    return detailedWard.metrics_2024?.urban_density || detailedWard.metrics_2019?.urban_density;
+                    return detailedWard.metrics_2024?.urban_density ?? detailedWard.metrics_2019?.urban_density;
                 case 'diversity':
-                    return detailedWard.metrics_2024?.feature_diversity || detailedWard.metrics_2019?.feature_diversity;
+                    return detailedWard.metrics_2024?.feature_diversity ?? detailedWard.metrics_2019?.feature_diversity;
                 case 'veg_change':
                     return detailedWard.change_metrics?.vegetation_change_percent;
                 case 'urban_change':
@@ -582,186 +609,146 @@
             }
         }
 
+        function interpolateColor(color1, color2, factor) {
+            if (arguments.length < 3) return color1;
+            let result = "#";
+            for (let i = 1; i <= 6; i += 2) {
+                let c1 = parseInt(color1.substr(i, 2), 16);
+                let c2 = parseInt(color2.substr(i, 2), 16);
+                let c = Math.round(c1 + factor * (c2 - c1));
+                result += c.toString(16).padStart(2, "0");
+            }
+            return result;
+        }
+
         function getColorForMetric(value, metric) {
-            if (value === null || value === undefined) {
-                return '#64748b'; // No data - gray
+            if (value === null || value === undefined) return '#64748b'; // No Data
+
+            let range;
+            if (metric === 'vegetation') range = metricRanges['vegetation_index'];
+            else if (metric === 'urban_density') range = metricRanges['urban_density'];
+            else if (metric === 'diversity') range = metricRanges['feature_diversity'];
+            else if (metric === 'veg_change') range = metricRanges['vegetation_change_percent'];
+            else if (metric === 'urban_change') range = metricRanges['urban_density_change_percent'];
+            else if (metric === 'diversity_change') range = metricRanges['diversity_change_percent'];
+
+            if (!range || range.min === Infinity) return '#64748b';
+
+            let denominator = range.max - range.min;
+            if (denominator === 0) denominator = 1;
+
+            // Normalize 0 to 1
+            const normalized = Math.max(0, Math.min(1, (value - range.min) / denominator));
+
+            // Color Scales: 'Best' = Green, 'Worst' = Red
+            if (metric === 'vegetation' || metric === 'diversity' || metric === 'veg_change' || metric === 'diversity_change') {
+                // Higher is Better (Red -> Green)
+                return interpolateColor('#ef4444', '#22c55e', normalized);
+            } else if (metric === 'urban_density' || metric === 'urban_change') {
+                // Higher is Worse (Good/Green -> Bad/Red)
+                // Assuming high urban density is 'bad' in sustainability context
+                return interpolateColor('#22c55e', '#ef4444', normalized);
             }
 
-            // For change metrics, use diverging color scale
-            if (metric.includes('change')) {
-                // Normalize to -100 to +100 range
-                const normalized = Math.max(-100, Math.min(100, value));
-                const absNorm = Math.abs(normalized) / 100;
-
-                if (metric === 'veg_change' || metric === 'diversity_change') {
-                    // Positive is good (green), negative is bad (red)
-                    if (normalized > 0) {
-                        // Green gradient
-                        if (absNorm > 0.75) return '#22c55e';
-                        if (absNorm > 0.5) return '#4ade80';
-                        if (absNorm > 0.25) return '#86efac';
-                        return '#bbf7d0';
-                    } else {
-                        // Red gradient
-                        if (absNorm > 0.75) return '#ef4444';
-                        if (absNorm > 0.5) return '#f87171';
-                        if (absNorm > 0.25) return '#fca5a5';
-                        return '#fecaca';
-                    }
-                } else if (metric === 'urban_change') {
-                    // Positive is concerning (red), negative is good (green)
-                    if (normalized > 0) {
-                        if (absNorm > 0.75) return '#ef4444';
-                        if (absNorm > 0.5) return '#f87171';
-                        if (absNorm > 0.25) return '#fca5a5';
-                        return '#fecaca';
-                    } else {
-                        if (absNorm > 0.75) return '#22c55e';
-                        if (absNorm > 0.5) return '#4ade80';
-                        if (absNorm > 0.25) return '#86efac';
-                        return '#bbf7d0';
-                    }
-                }
-            }
-
-            // For absolute metrics, use sequential color scale
-            // Normalize to 0-1 range (approximate based on typical values)
-            let normalized;
-            if (metric === 'vegetation' || metric === 'urban_density') {
-                normalized = Math.min(1, value / 0.5); // Typical max around 0.5
-            } else if (metric === 'diversity') {
-                normalized = Math.min(1, value / 1.0); // Typical max around 1.0
-            } else {
-                normalized = value;
-            }
-
-            // Color gradient from low (blue) to high (red)
-            if (normalized > 0.8) return '#ef4444'; // High - red
-            if (normalized > 0.6) return '#f97316'; // Medium-high - orange
-            if (normalized > 0.4) return '#eab308'; // Medium - yellow
-            if (normalized > 0.2) return '#84cc16'; // Medium-low - lime
-            return '#22c55e'; // Low - green
+            return '#64748b';
         }
 
         function getWardColor(wardData, wardId) {
             if (currentMetric === 'status') {
-                // Original status-based coloring
-                if (!wardData || !wardData.years || wardData.years.length === 0) {
-                    return '#64748b'; // No data - gray
-                }
-                if (wardData.years.length === 2) {
-                    return '#6366f1'; // Both years - purple
-                }
-                if (wardData.years.includes('2024')) {
-                    return '#22c55e'; // 2024 - green
-                }
-                return '#eab308'; // 2019 only - yellow
+                if (!wardData || !wardData.years || wardData.years.length === 0) return 'rgba(100, 116, 139, 0.1)';
+                if (wardData.years.length >= 2) return '#6366f1'; // Both
+                if (wardData.years.includes('2024')) return '#22c55e';
+                return '#eab308';
             } else {
-                // Metric-based coloring
                 const value = getMetricValue(wardId);
                 return getColorForMetric(value, currentMetric);
             }
         }
 
-        function updateLegend() {
-            const legendTitle = document.getElementById('legend-title');
-            const legendContent = document.getElementById('legend-content');
-
-            const legends = {
-                'status': {
-                    title: 'Data Availability',
-                    items: [
-                        { color: 'linear-gradient(135deg, #6366f1 0%, #818cf8 100%)', label: 'Both Years (2)' },
-                        { color: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)', label: '2024 Only (17)' },
-                        { color: 'linear-gradient(135deg, #eab308 0%, #ca8a04 100%)', label: '2019 Only (82)' },
-                        { color: 'rgba(100, 116, 139, 0.3)', label: 'No Data (146)', border: true }
-                    ]
-                },
-                'vegetation': {
-                    title: 'Vegetation Index',
-                    items: [
-                        { color: '#ef4444', label: 'Very High (>0.4)' },
-                        { color: '#f97316', label: 'High (0.3-0.4)' },
-                        { color: '#eab308', label: 'Medium (0.2-0.3)' },
-                        { color: '#84cc16', label: 'Low (0.1-0.2)' },
-                        { color: '#22c55e', label: 'Very Low (<0.1)' },
-                        { color: '#64748b', label: 'No Data', border: true }
-                    ]
-                },
-                'urban_density': {
-                    title: 'Urban Density',
-                    items: [
-                        { color: '#ef4444', label: 'Very High (>0.4)' },
-                        { color: '#f97316', label: 'High (0.3-0.4)' },
-                        { color: '#eab308', label: 'Medium (0.2-0.3)' },
-                        { color: '#84cc16', label: 'Low (0.1-0.2)' },
-                        { color: '#22c55e', label: 'Very Low (<0.1)' },
-                        { color: '#64748b', label: 'No Data', border: true }
-                    ]
-                },
-                'diversity': {
-                    title: 'Feature Diversity',
-                    items: [
-                        { color: '#ef4444', label: 'Very High (>0.8)' },
-                        { color: '#f97316', label: 'High (0.6-0.8)' },
-                        { color: '#eab308', label: 'Medium (0.4-0.6)' },
-                        { color: '#84cc16', label: 'Low (0.2-0.4)' },
-                        { color: '#22c55e', label: 'Very Low (<0.2)' },
-                        { color: '#64748b', label: 'No Data', border: true }
-                    ]
-                },
-                'veg_change': {
-                    title: 'Vegetation Change (%)',
-                    items: [
-                        { color: '#22c55e', label: 'Large Increase (>5%)' },
-                        { color: '#86efac', label: 'Increase (0-5%)' },
-                        { color: '#fecaca', label: 'Decrease (0 to -5%)' },
-                        { color: '#ef4444', label: 'Large Decrease (<-5%)' },
-                        { color: '#64748b', label: 'No Data', border: true }
-                    ]
-                },
-                'urban_change': {
-                    title: 'Urban Density Change (%)',
-                    items: [
-                        { color: '#ef4444', label: 'Large Increase (>5%)' },
-                        { color: '#fca5a5', label: 'Increase (0-5%)' },
-                        { color: '#86efac', label: 'Decrease (0 to -5%)' },
-                        { color: '#22c55e', label: 'Large Decrease (<-5%)' },
-                        { color: '#64748b', label: 'No Data', border: true }
-                    ]
-                },
-                'diversity_change': {
-                    title: 'Diversity Change (%)',
-                    items: [
-                        { color: '#22c55e', label: 'Large Increase (>10%)' },
-                        { color: '#86efac', label: 'Increase (0-10%)' },
-                        { color: '#fecaca', label: 'Decrease (0 to -10%)' },
-                        { color: '#ef4444', label: 'Large Decrease (<-10%)' },
-                        { color: '#64748b', label: 'No Data', border: true }
-                    ]
+        function toggleLayer(layerName) {
+            if (layerName === 'satellite') {
+                if (document.getElementById('show-satellite').checked) map.addLayer(satelliteLayer);
+                else map.removeLayer(satelliteLayer);
+            } else if (layerName === 'osm') {
+                if (document.getElementById('show-osm').checked) map.addLayer(osmLayer);
+                else map.removeLayer(osmLayer);
+            } else if (layerName === 'wards') {
+                if (wardLayer) {
+                    if (document.getElementById('show-wards').checked) map.addLayer(wardLayer);
+                    else map.removeLayer(wardLayer);
                 }
-            };
+            }
+        }
 
-            const legend = legends[currentMetric] || legends['status'];
-            legendTitle.textContent = legend.title;
+        function selectMetric(metric) {
+            currentMetric = metric;
 
-            legendContent.innerHTML = legend.items.map(item => `
-                <div class="legend-item">
-                    <div class="legend-color" style="background: ${item.color}; ${item.border ? 'border: 2px solid #64748b;' : ''}"></div>
-                    <span>${item.label}</span>
-                </div>
-            `).join('');
+            // Update UI Active State
+            document.querySelectorAll('.metric-item').forEach(el => el.classList.remove('active'));
+            // Find component by its onclick attribute content is tricky, better to use ID or logic
+            // But relying on order is brittle. Let's just re-render classes based on metric
+
+            const metrics = ['status', 'vegetation', 'urban_density', 'diversity', 'veg_change', 'urban_change', 'diversity_change'];
+            const index = metrics.indexOf(metric);
+            if (index >= 0) {
+                document.querySelectorAll('.metric-item')[index].classList.add('active');
+            }
+
+            if (wardLayer) wardLayer.setStyle(feature => getStyle(feature));
+            updateLegend();
+        }
+
+        function updateTime(year) {
+            currentYear = year;
+            if (wardLayer) wardLayer.setStyle(feature => getStyle(feature));
+        }
+
+        function updateOpacity(val) {
+            if (wardLayer) {
+                const opacity = val / 100;
+                wardLayer.eachLayer(layer => {
+                    layer.setStyle({ fillOpacity: document.getElementById('opacity-slider').value / 100 });
+                });
+                wardLayer.setStyle(feature => getStyle(feature)); // Force refresh
+            }
         }
 
         function shouldShowWard(wardData) {
-            if (!showProcessedOnly) return true;
             if (!wardData || !wardData.years) return false;
+            // If checking status, show all available
+            if (currentMetric === 'status') return true;
 
-            if (currentYear === 'both') {
-                return wardData.years.length === 2;
+            // If metric requires pair
+            if (currentMetric.includes('change')) {
+                return wardData.years.length >= 2;
             }
 
+            if (currentYear === 'both') return wardData.years.length >= 2;
             return wardData.years.includes(currentYear);
+        }
+
+        function getStyle(feature) {
+            const wardId = feature.properties.KGISWardID;
+            const wardData = getWardData(wardId);
+            const shouldShow = shouldShowWard(wardData);
+
+            return {
+                fillColor: getWardColor(wardData, wardId),
+                weight: shouldShow ? 1.5 : 1,
+                opacity: shouldShow ? 1 : 0.2, // Border opacity
+                color: shouldShow ? '#ffffff' : '#334155', // Border color white if active
+                fillOpacity: shouldShow ? (document.getElementById('opacity-slider').value / 100) : 0
+            };
+        }
+
+        function getWardData(wardId) {
+            if (!wardMapping) return null;
+            return wardMapping.wards.find(w => w.id === wardId);
+        }
+
+        function getDetailedWardData(wardId) {
+            if (!detailedAnalysis) return null;
+            return detailedAnalysis.wards.find(w => w.ward_id === wardId);
         }
 
         function loadWards() {
@@ -771,23 +758,9 @@
                     document.getElementById('loading').style.display = 'none';
 
                     wardLayer = L.geoJSON(data, {
-                        style: function (feature) {
-                            const wardId = feature.properties.KGISWardID;
-                            const wardData = getWardData(wardId);
-                            const hasData = wardData && wardData.years && wardData.years.length > 0;
-                            const shouldShow = shouldShowWard(wardData);
-
-                            return {
-                                fillColor: getWardColor(wardData, wardId),
-                                weight: 2,
-                                opacity: shouldShow ? 1 : 0.3,
-                                color: shouldShow ? '#475569' : '#334155',
-                                fillOpacity: shouldShow ? 0.7 : 0.1
-                            };
-                        },
-                        onEachFeature: function (feature, layer) {
-                            setupWardInteraction(feature, layer);
-                        }
+                        pane: 'wardsPane',
+                        style: getStyle,
+                        onEachFeature: setupWardInteraction
                     }).addTo(map);
 
                     map.fitBounds(wardLayer.getBounds());
@@ -795,259 +768,109 @@
                 });
         }
 
-        function setupWardInteraction(feature, layer) {
-            const props = feature.properties;
-            const wardData = getWardData(props.KGISWardID);
-            const hasData = wardData && wardData.years && wardData.years.length > 0;
-
-            let popupContent = `
-                <div style="padding: 12px;">
-                    <div class="popup-title">${props.KGISWardName}</div>
-                    <div class="popup-detail"><strong>Ward No:</strong> ${props.KGISWardNo}</div>
-                    <div class="popup-detail"><strong>Ward ID:</strong> ${props.KGISWardID}</div>
-            `;
-
-            if (hasData) {
-                const yearsStr = wardData.years.join(', ');
-                const statusColor = wardData.years.length === 2 ? '#818cf8' : (wardData.years.includes('2024') ? '#4ade80' : '#eab308');
-                popupContent += `<div class="popup-detail"><strong>Data:</strong> <span style="color: ${statusColor};">✓ ${yearsStr}</span></div>`;
-            } else {
-                popupContent += `<div class="popup-detail"><strong>Status:</strong> <span style="color: #94a3b8;">⏳ No data</span></div>`;
-            }
-
-            popupContent += `</div>`;
-
-            layer.bindPopup(popupContent);
-
-            layer.on('click', function () {
-                showWardInfo(props, wardData);
-            });
-
-            layer.on('mouseover', function () {
-                if (hasData) {
-                    layer.setStyle({
-                        weight: 3,
-                        color: '#6366f1',
-                        fillOpacity: 0.9
-                    });
-                }
-            });
-
-            layer.on('mouseout', function () {
-                wardLayer.resetStyle(layer);
-            });
-        }
-
-        function showWardInfo(props, wardData) {
-            const panel = document.getElementById('ward-info-panel');
-            const content = document.getElementById('info-content');
-
-            document.getElementById('info-ward-name').textContent = props.KGISWardName;
-            document.getElementById('info-ward-code').textContent = `Ward ${props.KGISWardNo} • ${props.KGISWardCode}`;
-
-            // Get detailed metrics for this ward
-            let detailedWard = null;
-            if (detailedAnalysis) {
-                detailedWard = detailedAnalysis.wards.find(w => w.ward_id === props.KGISWardID);
-            }
-
-            let infoHTML = `
-                <div class="info-row">
-                    <span class="info-label">Ward Number</span>
-                    <span class="info-value">${props.KGISWardNo}</span>
-                </div>
-                <div class="info-row">
-                    <span class="info-label">Ward ID</span>
-                    <span class="info-value">${props.KGISWardID}</span>
-                </div>
-            `;
-
-            if (wardData && wardData.years && wardData.years.length > 0) {
-                const yearsStr = wardData.years.join(', ');
-                const statusColor = wardData.years.length === 2 ? '#818cf8' : (wardData.years.includes('2024') ? '#4ade80' : '#eab308');
-
-                infoHTML += `
-                    <div class="info-row">
-                        <span class="info-label">Data Available</span>
-                        <span class="info-value" style="color: ${statusColor};">✓ ${yearsStr}</span>
-                    </div>
-                `;
-
-                // Show detailed metrics if available
-                if (detailedWard) {
-                    // Show 2024 metrics if available
-                    if (detailedWard.metrics_2024) {
-                        const m = detailedWard.metrics_2024;
-                        infoHTML += `
-                            <div class="info-row" style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(148, 163, 184, 0.2);">
-                                <span class="info-label" style="color: #4ade80;">2024 Metrics</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Vegetation Index</span>
-                                <span class="info-value">${m.vegetation_index.toFixed(4)}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Urban Density</span>
-                                <span class="info-value">${m.urban_density.toFixed(4)}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Feature Diversity</span>
-                                <span class="info-value">${m.feature_diversity.toFixed(4)}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Coverage</span>
-                                <span class="info-value">${m.coverage_percent.toFixed(1)}%</span>
-                            </div>
-                        `;
-                    }
-
-                    // Show 2019 metrics if available
-                    if (detailedWard.metrics_2019 && !detailedWard.metrics_2024) {
-                        const m = detailedWard.metrics_2019;
-                        infoHTML += `
-                            <div class="info-row" style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(148, 163, 184, 0.2);">
-                                <span class="info-label" style="color: #eab308;">2019 Baseline</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Vegetation Index</span>
-                                <span class="info-value">${m.vegetation_index.toFixed(4)}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Urban Density</span>
-                                <span class="info-value">${m.urban_density.toFixed(4)}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Feature Diversity</span>
-                                <span class="info-value">${m.feature_diversity.toFixed(4)}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Coverage</span>
-                                <span class="info-value">${m.coverage_percent.toFixed(1)}%</span>
-                            </div>
-                        `;
-                    }
-
-                    // Show change analysis if both years available
-                    if (detailedWard.has_change_analysis && detailedWard.change_metrics) {
-                        const cm = detailedWard.change_metrics;
-                        infoHTML += `
-                            <div class="info-row" style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(148, 163, 184, 0.2);">
-                                <span class="info-label" style="color: #818cf8;">📊 Change Analysis (2019→2024)</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Vegetation Change</span>
-                                <span class="info-value" style="color: ${cm.vegetation_change_percent >= 0 ? '#4ade80' : '#ef4444'};">
-                                    ${cm.vegetation_change_percent >= 0 ? '+' : ''}${cm.vegetation_change_percent.toFixed(2)}%
-                                </span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Urban Density Change</span>
-                                <span class="info-value" style="color: ${cm.urban_density_change_percent >= 0 ? '#ef4444' : '#4ade80'};">
-                                    ${cm.urban_density_change_percent >= 0 ? '+' : ''}${cm.urban_density_change_percent.toFixed(2)}%
-                                </span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Diversity Change</span>
-                                <span class="info-value" style="color: ${cm.diversity_change_percent >= 0 ? '#4ade80' : '#ef4444'};">
-                                    ${cm.diversity_change_percent >= 0 ? '+' : ''}${cm.diversity_change_percent.toFixed(2)}%
-                                </span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Overall Change</span>
-                                <span class="info-value">${cm.overall_change_magnitude.toFixed(4)}</span>
-                            </div>
-                        `;
-                    }
-                }
-            } else {
-                infoHTML += `
-                    <div class="info-row">
-                        <span class="info-label">Status</span>
-                        <span class="info-value" style="color: #fb923c;">⏳ Pending</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Note</span>
-                        <span class="info-value" style="font-size: 11px;">Complete processing for metrics</span>
-                    </div>
-                `;
-            }
-            content.innerHTML = infoHTML;
-            panel.classList.add('active');
-        }
-
         function updateStats() {
             if (!detailedAnalysis) return;
-
-            // Update processed count
             document.getElementById('wards-processed').textContent = detailedAnalysis.total_wards_analyzed;
         }
 
-        function updateMap() {
-            if (wardLayer) {
-                wardLayer.eachLayer(layer => {
-                    wardLayer.resetStyle(layer);
-                });
-                updateLegend();
-            }
+        function setupWardInteraction(feature, layer) {
+            const props = feature.properties;
+
+            layer.on({
+                mouseover: (e) => {
+                    const l = e.target;
+                    l.setStyle({ weight: 3, color: '#fbbf24', fillOpacity: 0.9 });
+                    l.bringToFront();
+
+                    const wardData = getDetailedWardData(props.KGISWardID);
+                    const panel = document.getElementById('ward-info-panel');
+                    document.getElementById('info-ward-name').textContent = props.KGISWardName;
+                    document.getElementById('info-ward-code').textContent = `Ward ${props.KGISWardNo}`;
+
+                    let content = '';
+                    if (wardData) {
+                        if (wardData.metrics_2024) {
+                            content += `<div class="info-row"><span class="info-label">Vegetation</span><span class="info-value">${wardData.metrics_2024.vegetation_index.toFixed(3)}</span></div>`;
+                            content += `<div class="info-row"><span class="info-label">Urban Density</span><span class="info-value">${wardData.metrics_2024.urban_density.toFixed(3)}</span></div>`;
+                        } else if (wardData.metrics_2019) {
+                            content += `<div class="info-row"><span class="info-label">Vegetation (2019)</span><span class="info-value">${wardData.metrics_2019.vegetation_index.toFixed(3)}</span></div>`;
+                        }
+
+                        if (wardData.change_metrics) {
+                            const vc = wardData.change_metrics.vegetation_change_percent;
+                            content += `<div class="info-row" style="margin-top:8px; border-top:1px solid #334155; padding-top:8px;">
+                                <span class="info-label">Veg Change</span>
+                                <span class="info-value" style="color: ${getColorForMetric(vc, 'veg_change')}">
+                                    ${vc > 0 ? '+' : ''}${vc.toFixed(1)}%
+                                </span></div>`;
+                        }
+                    } else {
+                        content = '<div class="info-row" style="color: #94a3b8">No analysis data</div>';
+                    }
+
+                    document.getElementById('info-content').innerHTML = content;
+                    panel.classList.add('active');
+                },
+                mouseout: (e) => {
+                    wardLayer.resetStyle(e.target);
+                    // document.getElementById('ward-info-panel').classList.remove('active'); // Optional: Keep active until click elsewhere?
+                    // Usually better to hide
+                    document.getElementById('ward-info-panel').classList.remove('active');
+                },
+                click: (e) => {
+                    map.fitBounds(e.target.getBounds());
+                }
+            });
         }
 
-        // Metric selector
-        document.getElementById('metric-selector').addEventListener('change', function (e) {
-            currentMetric = e.target.value;
-            updateMap();
-        });
+        function updateLegend() {
+            const legendTitle = document.getElementById('legend-title');
+            const legendContent = document.getElementById('legend-content');
 
-        // Time selection
-        document.querySelectorAll('input[name="time"]').forEach(radio => {
-            radio.addEventListener('change', function (e) {
-                currentYear = e.target.value;
-                updateMap();
-            });
-        });
+            // Update title
+            const titles = {
+                'status': 'Data Status',
+                'vegetation': 'Vegetation Index',
+                'urban_density': 'Urban Density',
+                'diversity': 'Diversity',
+                'veg_change': 'Vegetation Change',
+                'urban_change': 'Urban Density Change',
+                'diversity_change': 'Diversity Change'
+            };
+            legendTitle.textContent = titles[currentMetric] || 'Legend';
 
-        // Layer controls
-        document.getElementById('show-satellite').addEventListener('change', function (e) {
-            if (e.target.checked) {
-                map.addLayer(satelliteLayer);
-                map.removeLayer(darkLayer);
-            } else {
-                map.removeLayer(satelliteLayer);
-                map.addLayer(darkLayer);
-            }
-        });
+            if (currentMetric !== 'status') {
+                // Relative Scale Legend
+                let lowLabel = "Low / Worst";
+                let highLabel = "High / Best";
+                let gradient = "linear-gradient(90deg, #ef4444, #22c55e)"; // Red -> Green
 
-        document.getElementById('show-wards').addEventListener('change', function (e) {
-            if (wardLayer) {
-                if (e.target.checked) {
-                    map.addLayer(wardLayer);
-                } else {
-                    map.removeLayer(wardLayer);
+                if (currentMetric === 'urban_density' || currentMetric === 'urban_change') {
+                    lowLabel = "Low (Good)";
+                    highLabel = "High (Bad)";
+                    gradient = "linear-gradient(90deg, #22c55e, #ef4444)"; // Green -> Red
                 }
-            }
-        });
 
-        document.getElementById('show-processed').addEventListener('change', function (e) {
-            showProcessedOnly = e.target.checked;
-            updateMap();
-        });
-
-        document.getElementById('opacity-slider').addEventListener('input', function (e) {
-            const opacity = e.target.value / 100;
-            if (wardLayer) {
-                wardLayer.eachLayer(layer => {
-                    const feature = layer.feature;
-                    const wardData = getWardData(feature.properties.KGISWardID);
-                    const shouldShow = shouldShowWard(wardData);
-                    layer.setStyle({ fillOpacity: shouldShow ? opacity : 0.1 });
-                });
+                legendContent.innerHTML = `
+                    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: #cbd5e1; margin-bottom: 4px;">
+                        <span>${lowLabel}</span>
+                        <span>${highLabel}</span>
+                    </div>
+                    <div style="height: 12px; width: 100%; background: ${gradient}; border-radius: 4px; margin-bottom: 8px;"></div>
+                    <div style="text-align: center; font-size: 10px; color: #94a3b8;">
+                        Relative to current dataset
+                    </div>
+                 `;
+            } else {
+                // Status Legend
+                legendContent.innerHTML = `
+                    <div class="legend-item"><div class="legend-color" style="background: #6366f1;"></div><span>Both Years</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #22c55e;"></div><span>2024 Only</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #eab308;"></div><span>2019 Only</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #64748b;"></div><span>No Data</span></div>
+                 `;
             }
-        });
-
-        map.on('click', function (e) {
-            if (!e.originalEvent.target.closest('.leaflet-popup')) {
-                document.getElementById('ward-info-panel').classList.remove('active');
-            }
-        });
+        }
     </script>
 </body>
 
