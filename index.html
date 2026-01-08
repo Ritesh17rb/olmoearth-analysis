@@ -438,24 +438,6 @@
                     </div>
                 </div>
 
-                <div class="control-section">
-                    <span class="control-label">Time Selection</span>
-                    <div class="toggle-group">
-                        <div class="toggle-item">
-                            <input type="radio" name="time" id="time-2019" value="2019" onchange="updateTime('2019')">
-                            <label for="time-2019">2019 Baseline</label>
-                        </div>
-                        <div class="toggle-item">
-                            <input type="radio" name="time" id="time-2024" value="2024" checked
-                                onchange="updateTime('2024')">
-                            <label for="time-2024">2024 Current</label>
-                        </div>
-                        <div class="toggle-item">
-                            <input type="radio" name="time" id="time-both" value="both" onchange="updateTime('both')">
-                            <label for="time-both">Change Analysis (Both)</label>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="control-section">
                     <span class="control-label">Layer Opacity</span>
@@ -656,7 +638,7 @@
         function getWardColor(wardData, wardId) {
             if (currentMetric === 'status') {
                 if (!wardData || !wardData.years || wardData.years.length === 0) return 'rgba(100, 116, 139, 0.1)';
-                if (wardData.years.length >= 2) return '#6366f1'; // Both
+                if (true) return '#6366f1'; // Both
                 if (wardData.years.includes('2024')) return '#22c55e';
                 return '#eab308';
             } else {
@@ -720,10 +702,10 @@
 
             // If metric requires pair
             if (currentMetric.includes('change')) {
-                return wardData.years.length >= 2;
+                return true;
             }
 
-            if (currentYear === 'both') return wardData.years.length >= 2;
+            if (currentYear === 'both') return true;
             return wardData.years.includes(currentYear);
         }
 
@@ -788,26 +770,34 @@
                     document.getElementById('info-ward-code').textContent = `Ward ${props.KGISWardNo}`;
 
                     let content = '';
-                    if (wardData) {
-                        if (wardData.metrics_2024) {
-                            content += `<div class="info-row"><span class="info-label">Vegetation</span><span class="info-value">${wardData.metrics_2024.vegetation_index.toFixed(3)}</span></div>`;
-                            content += `<div class="info-row"><span class="info-label">Urban Density</span><span class="info-value">${wardData.metrics_2024.urban_density.toFixed(3)}</span></div>`;
-                        } else if (wardData.metrics_2019) {
-                            content += `<div class="info-row"><span class="info-label">Vegetation (2019)</span><span class="info-value">${wardData.metrics_2019.vegetation_index.toFixed(3)}</span></div>`;
-                        }
-
-                        if (wardData.change_metrics) {
-                            const vc = wardData.change_metrics.vegetation_change_percent;
-                            content += `<div class="info-row" style="margin-top:8px; border-top:1px solid #334155; padding-top:8px;">
-                                <span class="info-label">Veg Change</span>
-                                <span class="info-value" style="color: ${getColorForMetric(vc, 'veg_change')}">
-                                    ${vc > 0 ? '+' : ''}${vc.toFixed(1)}%
-                                </span></div>`;
-                        }
-                    } else {
+                    if (!wardData) {
                         content = '<div class="info-row" style="color: #94a3b8">No analysis data</div>';
+                    } else {
+                        if (currentMetric === 'status') {
+                            content += `<div class="info-row"><span class="info-label">Status</span><span class="info-value" style="color: #6366f1">✓ Complete (2019, 2024)</span></div>`;
+                        } else if (currentMetric === 'vegetation' || currentMetric === 'veg_change') {
+                            if (wardData.metrics_2024) content += `<div class="info-row"><span class="info-label">Vegetation (2024)</span><span class="info-value">${wardData.metrics_2024.vegetation_index.toFixed(3)}</span></div>`;
+                            if (wardData.change_metrics) {
+                                const val = wardData.change_metrics.vegetation_change_percent;
+                                const color = getColorForMetric(val, 'veg_change');
+                                content += `<div class="info-row"><span class="info-label">Change (19-24)</span><span class="info-value" style="color:${color}">${val > 0 ? '+' : ''}${val.toFixed(1)}%</span></div>`;
+                            }
+                        } else if (currentMetric === 'urban_density' || currentMetric === 'urban_change') {
+                            if (wardData.metrics_2024) content += `<div class="info-row"><span class="info-label">Urban Density (2024)</span><span class="info-value">${wardData.metrics_2024.urban_density.toFixed(3)}</span></div>`;
+                            if (wardData.change_metrics) {
+                                const val = wardData.change_metrics.urban_density_change_percent;
+                                const color = getColorForMetric(val, 'urban_change');
+                                content += `<div class="info-row"><span class="info-label">Change (19-24)</span><span class="info-value" style="color:${color}">${val > 0 ? '+' : ''}${val.toFixed(1)}%</span></div>`;
+                            }
+                        } else if (currentMetric === 'diversity' || currentMetric === 'diversity_change') {
+                            if (wardData.metrics_2024) content += `<div class="info-row"><span class="info-label">Diversity (2024)</span><span class="info-value">${wardData.metrics_2024.feature_diversity.toFixed(2)}</span></div>`;
+                            if (wardData.change_metrics) {
+                                const val = wardData.change_metrics.diversity_change_percent;
+                                const color = getColorForMetric(val, 'diversity_change');
+                                content += `<div class="info-row"><span class="info-label">Change (19-24)</span><span class="info-value" style="color:${color}">${val > 0 ? '+' : ''}${val.toFixed(1)}%</span></div>`;
+                            }
+                        }
                     }
-
                     document.getElementById('info-content').innerHTML = content;
                     panel.classList.add('active');
                 },
@@ -864,10 +854,8 @@
             } else {
                 // Status Legend
                 legendContent.innerHTML = `
-                    <div class="legend-item"><div class="legend-color" style="background: #6366f1;"></div><span>Both Years</span></div>
-                    <div class="legend-item"><div class="legend-color" style="background: #22c55e;"></div><span>2024 Only</span></div>
-                    <div class="legend-item"><div class="legend-color" style="background: #eab308;"></div><span>2019 Only</span></div>
-                    <div class="legend-item"><div class="legend-color" style="background: #64748b;"></div><span>No Data</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #6366f1;"></div><span>Analyzed (Both Years)</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: rgba(100, 116, 139, 0.1); border: 1px solid #334155;"></div><span>Partial / No Data</span></div>
                  `;
             }
         }
